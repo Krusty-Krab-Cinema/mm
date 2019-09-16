@@ -5,7 +5,7 @@ from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
-    url(r'^index/$', views.index),
+    url(r'^$', views.index),
     url(r'^single/(\d+)/$', views.single),
     url(r'^comment/(\d+)/$', views.comment),
     url(r'^like/$', views.like),
