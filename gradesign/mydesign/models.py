@@ -62,14 +62,13 @@ class Movie(models.Model):
     director = models.CharField('导演', max_length=200)  # 导演
     # lead_role = models.CharField(max_length=400)  # 主演
     length = models.CharField('片长', max_length=4)  # 片长
-    imdb_link = models.CharField('Imdb链接', max_length=200)  # Imdb链接
+    imdb_link = models.CharField('Imdb链接', max_length=200,null=True)  # Imdb链接
     mark = models.FloatField('评分', max_length=4)  # 评分
     cover_link = models.ImageField('封面图片')  # 封面图片地址
     summary = models.TextField('剧情简介')  # 剧情简介
-    is_delete = models.BooleanField('是否删除', default=False)  # 是否删除，默认False
-    is_carousel = models.BooleanField('是否首页轮播展示', default=False)  # 是否首页轮播图展示，默认False
-    is_sidebar = models.BooleanField('侧边栏推荐展示', default=False)  # 是否侧边栏推荐展示，默认False
-
+    is_delete = models.BooleanField('是否删除', default=0)  # 是否删除，默认False
+    is_carousel = models.BooleanField('是否首页轮播展示', default=0)  # 是否首页轮播图展示，默认False
+    is_sidebar = models.BooleanField('侧边栏推荐展示', default=0)  # 是否侧边栏推荐展示，默认False
     country = models.ForeignKey(Country, on_delete=models.DO_NOTHING, verbose_name='国家/地区')  # 外键关联
 
     style_type = models.ManyToManyField(StyleType, verbose_name='风格类型')  # 多对多关联
