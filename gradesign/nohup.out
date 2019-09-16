@@ -1,0 +1,240 @@
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.17 (64bit) on [Thu Mar  8 20:41:06 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 08 March 2018 03:31:43
+os: Linux-2.6.32-696.6.3.el6.x86_64 #1 SMP Wed Jul 12 14:17:22 UTC 2017
+nodename: iZuf6dql45c7jfss4t95fjZ
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /usr/local/nginx/html/django/gradesign
+detected binary path: /usr/local/nginx/html/django/env3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /usr/local/nginx/html/django/gradesign
+your processes number limit is 3900
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8008 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.0 (default, Jan  5 2018, 20:28:00)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-18)]
+Python main interpreter initialized at 0x1cfff80
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1cfff80 pid: 27320 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 27320)
+spawned uWSGI worker 1 (pid: 27322, cores: 2)
+spawned uWSGI worker 2 (pid: 27323, cores: 2)
+spawned uWSGI worker 3 (pid: 27324, cores: 2)
+spawned uWSGI worker 4 (pid: 27325, cores: 2)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27324|app: 0|req: 1/1] 115.173.244.234 () {44 vars in 817 bytes} [Thu Mar  8 12:41:12 2018] GET /index/ => generated 13537 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27324|app: 0|req: 2/2] 115.173.244.234 () {44 vars in 836 bytes} [Thu Mar  8 12:41:14 2018] GET /movie/4/ => generated 23432 bytes in 37 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 1/3] 115.173.244.234 () {44 vars in 821 bytes} [Thu Mar  8 12:41:23 2018] GET /movie/4/ => generated 23432 bytes in 65 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 2/4] 115.173.244.234 () {44 vars in 838 bytes} [Thu Mar  8 12:41:30 2018] GET /movie/2/ => generated 23432 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27325|app: 0|req: 3/5] 115.173.244.234 () {44 vars in 834 bytes} [Thu Mar  8 12:41:32 2018] GET /index/ => generated 13537 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 27325|app: 0|req: 4/6] 115.173.244.234 () {44 vars in 838 bytes} [Thu Mar  8 12:41:37 2018] GET /single/2/ => generated 12799 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27325|app: 0|req: 5/7] 115.173.244.234 () {44 vars in 835 bytes} [Thu Mar  8 12:41:40 2018] GET /index/ => generated 13537 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+./mydesign/views.py:174: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'mydesign.models.Movie'> QuerySet.
+  paginator = Paginator(search_list, 6) # 一页显示 6 条
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 6/8] 115.173.244.234 () {44 vars in 836 bytes} [Thu Mar  8 12:41:45 2018] GET /movie/5/ => generated 15655 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 7/9] 115.173.244.234 () {44 vars in 838 bytes} [Thu Mar  8 12:41:48 2018] GET /movie/7/ => generated 13732 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 8/10] 115.173.244.234 () {44 vars in 838 bytes} [Thu Mar  8 12:41:50 2018] GET /movie/9/ => generated 23432 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 27325|app: 0|req: 9/11] 115.173.244.234 () {44 vars in 840 bytes} [Thu Mar  8 12:41:52 2018] GET /single/1/ => generated 13427 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27325|app: 0|req: 10/12] 115.173.244.234 () {44 vars in 835 bytes} [Thu Mar  8 12:41:57 2018] GET /index/ => generated 13537 bytes in 17 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 11/13] 115.173.244.234 () {44 vars in 836 bytes} [Thu Mar  8 12:42:00 2018] GET /movie/5/ => generated 15655 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 27325|app: 0|req: 12/14] 115.173.244.234 () {44 vars in 840 bytes} [Thu Mar  8 12:42:03 2018] GET /single/3/ => generated 12877 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+http://idandan.vip:8888/single/3/
+[pid: 27325|app: 0|req: 13/15] 115.173.244.234 () {44 vars in 835 bytes} [Thu Mar  8 12:42:09 2018] GET /login/ => generated 6729 bytes in 35 msecs (HTTP/1.1 200) 5 headers in 255 bytes (1 switches on core 0)
+[pid: 27325|app: 0|req: 14/16] 115.173.244.234 () {44 vars in 882 bytes} [Thu Mar  8 12:42:17 2018] GET /register/ => generated 8764 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 1)
+http://idandan.vip:8888/single/3/
+[pid: 27325|app: 0|req: 15/17] 115.173.244.234 () {44 vars in 879 bytes} [Thu Mar  8 12:42:21 2018] GET /login/ => generated 6729 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 255 bytes (1 switches on core 0)
+http://idandan.vip:8888/login/
+[pid: 27325|app: 0|req: 16/18] 115.173.244.234 () {52 vars in 1060 bytes} [Thu Mar  8 12:42:35 2018] POST /login/ => generated 0 bytes in 20 msecs (HTTP/1.1 302) 6 headers in 274 bytes (1 switches on core 1)
+http://idandan.vip:8888/login/
+[pid: 27325|app: 0|req: 17/19] 115.173.244.234 () {46 vars in 907 bytes} [Thu Mar  8 12:42:35 2018] GET /login/ => generated 6729 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 255 bytes (1 switches on core 0)
+http://idandan.vip:8888/login/
+[pid: 27325|app: 0|req: 18/20] 115.173.244.234 () {52 vars in 1060 bytes} [Thu Mar  8 12:42:44 2018] POST /login/ => generated 0 bytes in 15 msecs (HTTP/1.1 302) 6 headers in 274 bytes (1 switches on core 1)
+http://idandan.vip:8888/login/
+[pid: 27325|app: 0|req: 19/21] 115.173.244.234 () {46 vars in 907 bytes} [Thu Mar  8 12:42:44 2018] GET /login/ => generated 6729 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 255 bytes (1 switches on core 0)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 20/22] 115.173.244.3 () {40 vars in 1010 bytes} [Thu Mar  8 12:47:53 2018] GET /movie/7/ => generated 13808 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 27325|app: 0|req: 21/23] 115.173.244.3 () {42 vars in 1053 bytes} [Thu Mar  8 12:47:55 2018] GET /uploads/0f000ZfaTILOAzSjfiSJj0.gif => generated 75073 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 4 headers in 142 bytes (0 switches on core 0)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27322|app: 0|req: 1/24] 115.173.244.3 () {42 vars in 1054 bytes} [Thu Mar  8 12:47:59 2018] GET /index/ => generated 13613 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 27325|app: 0|req: 22/25] 61.151.180.39 () {36 vars in 638 bytes} [Thu Mar  8 12:48:59 2018] GET /index => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 27322|app: 0|req: 2/26] 61.151.178.167 () {40 vars in 671 bytes} [Thu Mar  8 12:49:00 2018] GET /index => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 1)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27323|app: 0|req: 1/27] 61.151.178.167 () {40 vars in 673 bytes} [Thu Mar  8 12:49:00 2018] GET /index/ => generated 13537 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 27325|app: 0|req: 23/28] 101.226.65.107 () {38 vars in 686 bytes} [Thu Mar  8 12:51:11 2018] GET /index => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 1)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27323|app: 0|req: 2/29] 101.226.65.107 () {40 vars in 733 bytes} [Thu Mar  8 12:51:12 2018] GET /index/ => generated 13537 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 24/30] 115.173.244.234 () {44 vars in 880 bytes} [Thu Mar  8 13:15:54 2018] GET /movie/4/ => generated 23432 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 25/31] 115.173.244.234 () {44 vars in 882 bytes} [Thu Mar  8 13:15:56 2018] GET /movie/5/ => generated 15655 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 26/32] 115.173.244.234 () {44 vars in 882 bytes} [Thu Mar  8 13:15:58 2018] GET /movie/6/ => generated 17663 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 27/33] 115.173.244.234 () {44 vars in 882 bytes} [Thu Mar  8 13:17:08 2018] GET /movie/2/ => generated 23432 bytes in 32 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27325|app: 0|req: 28/34] 115.173.244.234 () {42 vars in 830 bytes} [Thu Mar  8 13:21:50 2018] GET /index/ => generated 13537 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 27325|app: 0|req: 29/35] 115.173.244.2 () {44 vars in 882 bytes} [Thu Mar  8 13:26:58 2018] GET /single/6/ => generated 12631 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 27325|app: 0|req: 30/36] 115.173.244.2 () {44 vars in 882 bytes} [Thu Mar  8 13:27:08 2018] GET /single/5/ => generated 12476 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 31/37] 115.173.244.2 () {44 vars in 881 bytes} [Thu Mar  8 13:27:15 2018] GET /movie/5/ => generated 15655 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 32/38] 115.173.244.2 () {44 vars in 880 bytes} [Thu Mar  8 13:27:17 2018] GET /movie/6/ => generated 17663 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 27325|app: 0|req: 33/39] 115.173.244.2 () {44 vars in 882 bytes} [Thu Mar  8 13:27:21 2018] GET /single/2/ => generated 12799 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+http://idandan.vip:8888/single/2/
+[pid: 27325|app: 0|req: 34/40] 115.173.244.2 () {44 vars in 877 bytes} [Thu Mar  8 13:27:25 2018] GET /login/ => generated 6729 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 255 bytes (1 switches on core 1)
+http://idandan.vip:8888/login/
+[pid: 27325|app: 0|req: 35/41] 115.173.244.2 () {52 vars in 1058 bytes} [Thu Mar  8 13:27:32 2018] POST /login/ => generated 0 bytes in 29 msecs (HTTP/1.1 302) 6 headers in 274 bytes (1 switches on core 0)
+http://idandan.vip:8888/login/
+[pid: 27325|app: 0|req: 36/42] 115.173.244.2 () {46 vars in 905 bytes} [Thu Mar  8 13:27:32 2018] GET /login/ => generated 6729 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 255 bytes (1 switches on core 1)
+http://idandan.vip:8888/login/
+[pid: 27325|app: 0|req: 37/43] 115.173.244.2 () {52 vars in 1058 bytes} [Thu Mar  8 13:27:45 2018] POST /login/ => generated 0 bytes in 14 msecs (HTTP/1.1 302) 6 headers in 274 bytes (1 switches on core 0)
+http://idandan.vip:8888/login/
+[pid: 27325|app: 0|req: 38/44] 115.173.244.2 () {46 vars in 905 bytes} [Thu Mar  8 13:27:45 2018] GET /login/ => generated 6729 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 255 bytes (1 switches on core 1)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27325|app: 0|req: 39/45] 115.173.244.2 () {44 vars in 878 bytes} [Thu Mar  8 13:27:54 2018] GET /movie/2/ => generated 23432 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /
+[pid: 27325|app: 0|req: 40/46] 59.110.6.177 () {32 vars in 373 bytes} [Thu Mar  8 17:00:10 2018] GET / => generated 3368 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /webservice/proxy/validate
+[pid: 27325|app: 0|req: 41/47] 101.200.72.63 () {28 vars in 362 bytes} [Thu Mar  8 17:40:18 2018] GET /webservice/proxy/validate => generated 3455 bytes in 4 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'idandan.vip:8888:8888'. The domain name provided is not valid according to RFC 1034/1035.
+[pid: 27325|app: 0|req: 42/48] 47.95.28.143 () {26 vars in 285 bytes} [Thu Mar  8 19:28:10 2018] GET / => generated 54371 bytes in 29 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 1)
+Invalid HTTP_HOST header: 'idandan.vip:8888:8888'. The domain name provided is not valid according to RFC 1034/1035.
+[pid: 27325|app: 0|req: 43/49] 106.14.104.214 () {26 vars in 287 bytes} [Thu Mar  8 20:25:14 2018] GET / => generated 54373 bytes in 30 msecs (HTTP/1.0 400) 1 headers in 53 bytes (1 switches on core 0)
+Not Found: /
+[pid: 27325|app: 0|req: 44/50] 47.203.91.64 () {44 vars in 736 bytes} [Thu Mar  8 21:34:28 2018] GET / => generated 3363 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /404/search_children.js
+[pid: 27325|app: 0|req: 45/51] 120.132.3.65 () {34 vars in 517 bytes} [Thu Mar  8 21:50:43 2018] GET /404/search_children.js => generated 3443 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 27325|app: 0|req: 46/52] 107.170.231.244 () {34 vars in 406 bytes} [Thu Mar  8 23:29:12 2018] GET / => generated 3368 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /
+[pid: 27325|app: 0|req: 47/53] 205.209.159.34 () {34 vars in 466 bytes} [Fri Mar  9 00:40:11 2018] GET / => generated 3368 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 27325|app: 0|req: 48/54] 58.247.72.250 () {42 vars in 826 bytes} [Fri Mar  9 00:52:01 2018] GET /index => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 1)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27323|app: 0|req: 3/55] 58.247.72.250 () {42 vars in 828 bytes} [Fri Mar  9 00:52:01 2018] GET /index/ => generated 13537 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 27325|app: 0|req: 49/56] 58.247.72.250 () {42 vars in 803 bytes} [Fri Mar  9 00:52:03 2018] GET /favicon.ico => generated 3416 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+0f000ZfaTILOAzSjfiSJj0.gif
+[pid: 27323|app: 0|req: 4/57] 58.247.72.250 () {44 vars in 878 bytes} [Fri Mar  9 00:52:12 2018] GET /movie/2/ => generated 23432 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 27325|app: 0|req: 50/58] 58.247.72.250 () {42 vars in 851 bytes} [Fri Mar  9 00:52:12 2018] GET /uploads/0f000ZfaTILOAzSjfiSJj0.gif => generated 75073 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 4 headers in 142 bytes (0 switches on core 0)
+[pid: 27322|app: 0|req: 3/59] 58.247.72.250 () {44 vars in 882 bytes} [Fri Mar  9 00:52:18 2018] GET /single/3/ => generated 12877 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 27322|app: 0|req: 4/60] 58.247.72.250 () {44 vars in 883 bytes} [Fri Mar  9 00:52:21 2018] GET /single/5/ => generated 12476 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+[pid: 27325|app: 0|req: 51/61] 58.247.72.250 () {44 vars in 883 bytes} [Fri Mar  9 00:52:24 2018] GET /single/6/ => generated 12631 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 27325|app: 0|req: 52/62] 58.247.72.250 () {44 vars in 883 bytes} [Fri Mar  9 00:52:26 2018] GET /single/2/ => generated 12799 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+Not Found: /
+[pid: 27325|app: 0|req: 53/63] 116.62.176.205 () {32 vars in 375 bytes} [Fri Mar  9 01:19:25 2018] GET / => generated 3368 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+invalid request block size: 21573 (max 4096)...skip
+Not Found: /echo.php
+[pid: 27325|app: 0|req: 54/64] 139.162.81.62 () {32 vars in 425 bytes} [Fri Mar  9 02:02:53 2018] GET /echo.php?info=1234567890 => generated 3425 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+Not Found: /
+[pid: 27325|app: 0|req: 55/65] 58.247.72.250 () {42 vars in 811 bytes} [Fri Mar  9 02:43:10 2018] GET / => generated 3365 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 27325|app: 0|req: 56/66] 58.247.72.250 () {42 vars in 792 bytes} [Fri Mar  9 02:43:10 2018] GET /favicon.ico => generated 3416 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 27325|app: 0|req: 57/67] 58.247.72.250 () {42 vars in 821 bytes} [Fri Mar  9 02:43:17 2018] GET /index => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27324|app: 0|req: 3/68] 58.247.72.250 () {42 vars in 823 bytes} [Fri Mar  9 02:43:17 2018] GET /index/ => generated 13537 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /
+[pid: 27324|app: 0|req: 4/69] 58.247.72.250 () {42 vars in 816 bytes} [Fri Mar  9 02:43:46 2018] GET / => generated 3365 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27325|app: 0|req: 58/70] 58.247.72.250 () {42 vars in 828 bytes} [Fri Mar  9 02:43:49 2018] GET /index/ => generated 13537 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /
+[pid: 27325|app: 0|req: 59/71] 58.247.72.250 () {42 vars in 816 bytes} [Fri Mar  9 03:24:53 2018] GET / => generated 3365 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27325|app: 0|req: 60/72] 58.247.72.250 () {42 vars in 828 bytes} [Fri Mar  9 03:24:57 2018] GET /index/ => generated 13537 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27325|app: 0|req: 61/73] 58.247.72.250 () {42 vars in 823 bytes} [Fri Mar  9 03:25:04 2018] GET /index/ => generated 13537 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 1)
+https://img3.doubanio.com/view/photo/l/public/p2505642154.webp
+https://img3.doubanio.com/view/photo/l/public/p2509147061.webp
+https://img3.doubanio.com/view/photo/l/public/p2512753846.webp
+https://img3.doubanio.com/view/photo/l/public/p2514180577.webp
+https://img3.doubanio.com/view/photo/l/public/p2504277551.webp
+[pid: 27325|app: 0|req: 62/74] 58.247.72.250 () {42 vars in 828 bytes} [Fri Mar  9 03:25:37 2018] GET /index/ => generated 13537 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Fri Mar  9 04:03:14 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Mar  9 04:03:14 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Mar  9 04:03:14 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Mar  9 04:03:14 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Mar  9 04:03:14 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Mar  9 04:03:14 2018 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Mar  9 04:03:14 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Fri Mar  9 04:03:14 2018 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
