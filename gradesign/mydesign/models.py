@@ -41,6 +41,7 @@ class User(models.Model):
     subscribe = models.CharField('是否订阅电子杂志', max_length=4, default='on')  # 用户是否订阅杂志on/off
     token = models.CharField(max_length=250, default='')
 
+
     # 创建用户
     @classmethod
     def createuser(cls, username, password, email, is_subscribe, token):

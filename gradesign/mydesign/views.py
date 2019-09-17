@@ -21,17 +21,16 @@ def index(request):
         i.new_link = 'https://img3.doubanio.com/view/photo/l/public/' + str(i.cover_link).split('_')[0] + '.webp'
         if i.new_link.count('.webp') > 1:
             i.new_link = i.new_link[ : len(i.new_link) - 5]
-#        print(i.new_link)
 
-    # 推荐页面显示的视频小图（10个）
-    recommend_list = Movie.objects.order_by('-mark')[:10]
+    # 推荐页面显示的视频小图（8个）
+    recommend_list = Movie.objects.order_by('-mark')[:8]
     for r in recommend_list:
         r.pic_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(r.cover_link).split('_')[0] + '.webp'
         if r.pic_link.count('.webp') > 1:
             r.pic_link = r.pic_link[ : len(r.pic_link) - 5]
-        # print(r.pic_link)
+        print(r.pic_link)
         r.like_count = len(r.like.all())  # 视频被收藏的总数
-        # print(r.like_count)
+        print(r.like_count)
 
     return render(request, 'index.html', {'carousel_list':carousel_list,
                                           'recommend_list':recommend_list,
@@ -231,7 +230,7 @@ def login(request):
             return redirect('/login/')
 
         # 登陆成功
-        response = HttpResponseRedirect('/index/')
+        response = HttpResponseRedirect('/')
         token = make_password(nickname)
         u.token = token
         u.save()
@@ -286,7 +285,7 @@ def register(request):
 
             # 注册成功需要做状态保持,写入session,默认登陆
             request.session['username'] = nickname
-            response = redirect('/index/')
+            response = redirect('/')
             response.set_cookie('usernameKey', 'username')
             response.set_cookie('userToken', userToken)
 
@@ -297,7 +296,7 @@ def register(request):
 from django.contrib.auth import logout
 def quit(request):
     logout(request)
-    return redirect('/index/')
+    return redirect('/')
 
 
 # 个人中心
@@ -361,3 +360,9 @@ def person(request):
         'ad_list': ad_list,
         'results':results,
     })
+
+
+def play(request):
+
+
+    return render(request,'newmovie.html')

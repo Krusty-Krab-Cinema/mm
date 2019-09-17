@@ -62,6 +62,9 @@
                                 </script>
                                 {% if username %}
                                     <a id="is_like" url="{{ movie.id }}" class="btn1" href="#" {% if is_like %}style="background-color: #3f444e"{% endif %}>{% if is_like %}取消收藏{% else %}我要收藏{% endif %}</a>
+                                    <br>
+                                    <br>
+                                    <button class="btn1" ><a href="{% url 'play'  %}" style="text-decoration: none;color: white">点击观看</a></button>
                                 {% endif %}
 
 
