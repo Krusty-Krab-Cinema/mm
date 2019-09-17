@@ -41,6 +41,9 @@ class User(models.Model):
     subscribe = models.CharField('是否订阅电子杂志', max_length=4, default='on')  # 用户是否订阅杂志on/off
     token = models.CharField(max_length=250, default='')
 
+    v_start=models.DateField(default='2019-01-01')
+
+    v_end=models.DateField(default='2019-01-01')
 
     # 创建用户
     @classmethod
