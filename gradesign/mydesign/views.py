@@ -11,17 +11,14 @@ from .models import Movie, User, Comment, Advertise
 def index(request):
     # return HttpResponse('hi')
     # return render(request, 'base.html')
-
     key = request.COOKIES.get('usernameKey')
     usernameKey = request.session.get(key, 0)
-
     # 导航显示的视频封面图片
     carousel_list = Movie.objects.filter(is_carousel=True)
     for i in carousel_list:
         i.new_link = 'https://img3.doubanio.com/view/photo/l/public/' + str(i.cover_link).split('_')[0] + '.webp'
         if i.new_link.count('.webp') > 1:
             i.new_link = i.new_link[ : len(i.new_link) - 5]
-
     # 推荐页面显示的视频小图（8个）
     recommend_list = Movie.objects.order_by('-mark')[:8]
     for r in recommend_list:
@@ -31,7 +28,6 @@ def index(request):
         print(r.pic_link)
         r.like_count = len(r.like.all())  # 视频被收藏的总数
         print(r.like_count)
-
     return render(request, 'index.html', {'carousel_list':carousel_list,
                                           'recommend_list':recommend_list,
                                           'username':usernameKey,
@@ -282,13 +278,11 @@ def register(request):
             # 创建用户
             user = User.createuser(username=nickname, password=password, email=email, is_subscribe=subscribe, token=userToken)
             user.save()
-
             # 注册成功需要做状态保持,写入session,默认登陆
             request.session['username'] = nickname
             response = redirect('/')
             response.set_cookie('usernameKey', 'username')
             response.set_cookie('userToken', userToken)
-
             return response
 
 
@@ -316,11 +310,9 @@ def person(request):
         if s.slink.count('.webp') > 1:
             s.slink = s.slink[: len(s.slink) - 5]
         # print(s.slink)
-
         # 主角
         s.s_lead = s.lead_role.all()[:3]
         # print(s.s_lead)
-
         s.like_count = len(s.like.all())  # 视频被收藏的总数
 
     paginator = Paginator(results, 6)  # 一页显示 6 条
