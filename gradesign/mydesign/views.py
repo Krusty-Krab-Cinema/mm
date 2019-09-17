@@ -13,6 +13,7 @@ def index(request):
     # return render(request, 'base.html')
     key = request.COOKIES.get('usernameKey')
     usernameKey = request.session.get(key, 0)
+
     # 导航显示的视频封面图片
     carousel_list = Movie.objects.filter(is_carousel=True)
     for i in carousel_list:
@@ -31,6 +32,7 @@ def index(request):
     return render(request, 'index.html', {'carousel_list':carousel_list,
                                           'recommend_list':recommend_list,
                                           'username':usernameKey,
+
                                         })
 
 

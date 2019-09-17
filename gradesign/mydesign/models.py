@@ -49,8 +49,8 @@ class User(models.Model):
 
     # 创建用户
     @classmethod
-    def createuser(cls, username, password, email, is_subscribe, token):
-        u = cls(username=username, password=password, email=email, subscribe=is_subscribe, token=token)
+    def createuser(cls, username, password, email, is_subscribe, token, is_vip):
+        u = cls(username=username, password=password, email=email, subscribe=is_subscribe, token=token, is_vip=is_vip)
         return u
 
     class Meta:
