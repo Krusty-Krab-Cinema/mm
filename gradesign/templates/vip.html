@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+{% block mine %}
+    <!--<li style="list-style-type: none"><img src="{% static 'images/p1.png' %}" alt=""/></li>-->
+    {% if username %}
+        {% ifequal user.is_vip 1 %}
+            <li style="list-style-type: none"><p><a href="/person/">{{ username }}</a></p></li>
+            <li style="list-style-type: none"><img style="width: 30px;height: 30px" src="/static/images/vip1.jpg" alt="vip"></li>
+            <li style="list-style-type: none"><p><a href="/quit/">退出</a></p></li>
+        {% else %}
+            <li style="list-style-type: none"><p><a href="/person/">{{ username }}</a></p></li>
+            <li style="list-style-type: none"><p><a href="/quit/">退出</a></p></li>
+            <li style="list-style-type: none"><a style="color: green;font-size: 10px" href="{% url 'vip' %}">
+                <marquee behavior="scroll" direction="left">同学,充个VIP吧,很爽的呦！</marquee></a></li>
+        {% endifequal %}
+    {% else %}
+        <li style="list-style-type: none"><p><a href="/login/">立即登陆</a></p></li>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<style>
+#vip{
+    float: left;
+}
+#vip li{
+    list-style: none;
+    font-size: 20px;
+    color: white;
+}
+
+</style>
+
+<body>
+<h1 style="color:white;">{{ username }},
+    你想拥有力量吗？
+</h1>
+{#<div>#}
+{#    <ul id="vip">#}
+{#        <li><input type="radio" name="viptype" id="1" > 小海绵会员(1个月)<img src="/static/images/hmbb.gif" alt=""></li>#}
+{#        <li><input type="radio" name="viptype" id="2" > 派大星会员(3个月)<img src="/static/images/pdx.gif" alt=""></li>#}
+{#        <li><input type="radio" name="viptype" id="3" > 珊迪会员(6个月)<img src="/static/images/Susan.gif" alt=""></li>#}
+{#        <li><input type="radio" name="viptype" id="4" > 章鱼哥会员(12个月)<img src="/static/images/zyg.gif" alt=""></li>#}
+{#    </ul>#}
+{#</div>#}
+<div>
+<ul id="vip">
+    <li><input type="radio" name="viptype" id="1" > 小海绵会员(1个月)12</li>
+    <li><input type="radio" name="viptype" id="2" > 派大星会员(3个月)30</li>
+    <li><input type="radio" name="viptype" id="3" > 珊迪会员(6个月)70</li>
+    <li><input type="radio" name="viptype" id="4" > 章鱼哥会员(12个月)130</li>
+</ul>
+</div>
+<div>
+    <p style="font-size: 20px;color: white">{{ username }}</p>
+</div>
+</body>
+{% endblock %}
+

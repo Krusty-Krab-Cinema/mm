@@ -362,3 +362,15 @@ def play(request):
 
 
     return render(request,'newmovie.html')
+
+def vip(request):
+    key = request.COOKIES.get('usernameKey')
+    usernameKey = request.session.get(key, 0)
+    username = request.session.get(key, 0)
+    if username != 0:
+        user = User.objects.get(username=username)
+
+    return render(request,'vip.html',{
+        'user': user,
+        'username':usernameKey
+    })
