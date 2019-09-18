@@ -138,13 +138,13 @@ def movie(request, tid):
     elif tid == '4':  # 高分
         search_list = Movie.objects.order_by('-mark')
     elif tid == '5':  # 华语
-        search_list = Movie.objects.filter(country_id=3)
+        search_list = Movie.objects.filter(country_id=1)
     elif tid == '6':  # 欧美
         search_list = Movie.objects.filter(country_id=2)
     elif tid == '7':  # 韩国
-        search_list = Movie.objects.filter(country_id=1)
-    elif tid == '8':  # 日本
         search_list = Movie.objects.filter(country_id=4)
+    elif tid == '8':  # 日本
+        search_list = Movie.objects.filter(country_id=3)
     elif tid == '9':  # 更多
         search_list = Movie.objects.all()
     elif tid == '0':
