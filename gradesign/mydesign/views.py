@@ -58,7 +58,6 @@ def like(request):
 # 详情页
 def single(request, mid):
     key = request.COOKIES.get('usernameKey')
-    usernameKey = request.session.get(key, 0)
     username = request.session.get(key, 0)
     if username != 0:
         user = User.objects.get(username=username)
@@ -102,14 +101,7 @@ def single(request, mid):
         comment_list = []
     comment_list_count = len(comment_list)  # 评论总数
 
-    return render(request, 'single.html', {'movie':single_movie,
-                                           'side_recommend':side_recommend,
-                                           'username':usernameKey,
-                                           'is_like':is_like,
-                                           'comment_list':comment_list,
-                                           'comment_list_count':comment_list_count,
-                                           'user':user
-                                           })
+    return render(request, 'single.html', locals())
 
 
 # 评论
@@ -129,7 +121,6 @@ def comment(request, mid):
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def movie(request, tid):
     key = request.COOKIES.get('usernameKey')
-    usernameKey = request.session.get(key, 0)
     username = request.session.get(key, 0)
     if username != 0:
         user = User.objects.get(username=username)
@@ -203,12 +194,7 @@ def movie(request, tid):
         print(a.pic)
 
 
-    return render(request, 'movie.html', {'username':usernameKey,
-                                          'results':results,
-                                          'side_recommend':side_recommend,
-                                          'ad_list':ad_list,
-                                          'user':user
-                                          })
+    return render(request, 'movie.html',locals())
 
 
 # 登陆页
@@ -379,7 +365,7 @@ def vip(request):
         user.v_start = datetime.datetime.now()
         user.v_end = user.v_start+relativedelta(months=int(times))
         user.save()
-        # return redirect(reverse(''))
+        # return redirect(reverse('jump'))
         pass
 
 
