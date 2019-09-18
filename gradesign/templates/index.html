@@ -23,7 +23,7 @@
     {% if username %}
         {% ifequal user.is_vip 1 %}
             <li style="list-style-type: none"><p><a href="/person/">{{ username }}</a></p></li>
-            <li style="list-style-type: none"><span style="color: orangered;font-weight: bolder" >VIP</span></li>
+            <li style="list-style-type: none"><img style="width: 30px;height: 30px" src="/static/images/vip1.jpg" alt="vip"></li>
             <li style="list-style-type: none"><p><a href="/quit/">退出</a></p></li>
         {% else %}
             <li style="list-style-type: none"><p><a href="/person/">{{ username }}</a></p></li>

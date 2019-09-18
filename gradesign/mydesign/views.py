@@ -55,7 +55,9 @@ def like(request):
 def single(request, mid):
     key = request.COOKIES.get('usernameKey')
     usernameKey = request.session.get(key, 0)
-
+    username = request.session.get(key, 0)
+    if username != 0:
+        user = User.objects.get(username=username)
     token = request.COOKIES.get('userToken')
 
     single_movie = Movie.objects.get(id=mid)
@@ -102,6 +104,7 @@ def single(request, mid):
                                            'is_like':is_like,
                                            'comment_list':comment_list,
                                            'comment_list_count':comment_list_count,
+                                           'user':user
                                            })
 
 
@@ -123,7 +126,9 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def movie(request, tid):
     key = request.COOKIES.get('usernameKey')
     usernameKey = request.session.get(key, 0)
-
+    username = request.session.get(key, 0)
+    if username != 0:
+        user = User.objects.get(username=username)
     # search_result_list = Movie.objects.filter(style_type=)
     # 根据id,分类搜索
     # print(tid)
@@ -198,6 +203,7 @@ def movie(request, tid):
                                           'results':results,
                                           'side_recommend':side_recommend,
                                           'ad_list':ad_list,
+                                          'user':user
                                           })
 
 
