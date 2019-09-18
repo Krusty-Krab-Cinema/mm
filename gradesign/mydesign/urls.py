@@ -15,5 +15,6 @@ urlpatterns = [
     url(r'^quit/$', views.quit),
     url(r'^person/$', views.person),
     url(r'^play/',views.play,name='play'),
-    url(r'^vip/',views.vip,name='vip')
+    url(r'^vip/',views.vip,name='vip'),
+    url(r'^jump/',views.jump,name='jump')
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

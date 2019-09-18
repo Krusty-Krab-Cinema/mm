@@ -1,8 +1,12 @@
+import datetime
+from dateutil.relativedelta import relativedelta
+
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.http import JsonResponse
 from django.contrib.auth.hashers import make_password, check_password
 from django.db import models
+from django.urls import reverse
 
 from .models import Movie, User, Comment, Advertise
 
@@ -369,8 +373,21 @@ def vip(request):
     username = request.session.get(key, 0)
     if username != 0:
         user = User.objects.get(username=username)
+        print(user)
+    if request.method == 'POST':
+        times=request.POST.get('viptype')
+        user.v_start = datetime.datetime.now()
+        user.v_end = user.v_start+relativedelta(months=int(times))
+        user.save()
+        # return redirect(reverse(''))
+        pass
+
 
     return render(request,'vip.html',{
         'user': user,
         'username':usernameKey
     })
+
+
+def jump(request):
+    return None

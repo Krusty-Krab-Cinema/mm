@@ -35,6 +35,9 @@
 #money{
     color: grey;
 }
+#oldmoney{
+    text-decoration: line-through;
+}
 
 </style>
 
@@ -49,14 +52,20 @@
     <form action="{% url 'vip' %}" method="post">
         <table id="vip">
     {{ crsf_token }}
-        <tr><td><input type="radio" name="viptype" id="1" > 小海绵会员(1个月)<img src="/static/images/hmbb.gif" alt=""></td>
-            <td id="money">10元 / 每月</td>
+        <tr><td><input type="radio" name="viptype" value="1" id="1">&nbsp;<label for="1"> 小海绵会员(1个月)</label><img src="/static/images/hmbb.gif" alt=""></td>
+            <td id="money">¥10元 / 连续包月</td>
         </tr>
-        <tr><td><input type="radio" name="viptype" id="2" > 派大星会员(3个月)<img src="/static/images/pdx.gif" alt=""></td></tr>
-        <tr><td><input type="radio" name="viptype" id="3" > 珊迪会员(6个月)<img src="/static/images/Susan.gif" alt=""></td></tr>
-        <tr><td><input type="radio" name="viptype" id="4" > 章鱼哥会员(12个月)<img src="/static/images/zyg.gif" alt=""></td></tr>
+        <tr><td><input type="radio" name="viptype" value="3" id="2">&nbsp;<label for="2"> 派大星会员(3个月)</label><img src="/static/images/pdx.gif" alt=""></td>
+            <td id="money">¥28元 / 连续包季 <span id="oldmoney">¥30</span></td>
+        </tr>
+        <tr><td><input type="radio" name="viptype" value="6" id="3">&nbsp;<label for="3"> 珊迪会员(6个月)</label><img src="/static/images/Susan.gif" alt=""></td>
+            <td id="money">¥58元 / 半年 <span id="oldmoney">¥60</span></td>
+        </tr>
+        <tr><td><input type="radio" name="viptype" value="12" id="4">&nbsp;<label for="4"> 章鱼哥会员(12个月)</label><img src="/static/images/zyg.gif" alt=""></td>
+            <td id="money">¥108元 / 一年 <span id="oldmoney">¥120</span></td>
+        </tr>
             <tr><td>&nbsp;</td></tr>
-        <tr><td><button class="btn1" type="submit">确认购买</button></td></tr>
+        <tr><td colspan="2"><button class="btn1" type="submit">确认购买</button></td></tr>
         </table>
     </form>
 
