@@ -11,7 +11,7 @@
         {% else %}
             <li style="list-style-type: none"><p><a href="/person/">{{ username }}</a></p></li>
             <li style="list-style-type: none"><p><a href="/quit/">退出</a></p></li>
-            <li style="list-style-type: none"><a style="color: green;font-size: 10px" href="">
+            <li style="list-style-type: none"><a style="color: green;font-size: 10px" href="{% url 'vip' %}">
                 <marquee behavior="scroll" direction="left">同学,充个VIP吧,很爽的呦！</marquee></a></li>
         {% endifequal %}
     {% else %}
