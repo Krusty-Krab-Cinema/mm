@@ -12,9 +12,10 @@ def index(request):
     # return HttpResponse('hi')
     # return render(request, 'base.html')
     key = request.COOKIES.get('usernameKey')
-    usernameKey = request.session.get(key, 0)
-    user=User.objects.get(username=usernameKey)
-    print(type(user.is_vip))
+    username = request.session.get(key, 0)
+    if username != 0:
+        user=User.objects.get(username=username)
+        print(type(user.is_vip))
     # 导航显示的视频封面图片
     carousel_list = Movie.objects.filter(is_carousel=True)
     for i in carousel_list:
@@ -28,11 +29,7 @@ def index(request):
         if r.pic_link.count('.webp') > 1:
             r.pic_link = r.pic_link[ : len(r.pic_link) - 5]
         r.like_count = len(r.like.all())  # 视频被收藏的总数
-    return render(request, 'index.html', {'carousel_list':carousel_list,
-                                        'recommend_list':recommend_list,
-                                        'username':usernameKey,
-                                        'user':user
-                                        })
+    return render(request, 'index.html', locals())
 
 
 # 收藏/取消收藏
