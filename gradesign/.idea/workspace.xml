@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66557e39-fd24-4c3f-b08c-7a50d6df9c21" name="Default" comment="index">
-      <change beforePath="$PROJECT_DIR$/.idea/gradesign.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradesign.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/category.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/comment.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/flink.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index(1).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/loginlog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/manage-user.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/notice.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/readset.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/setting.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/vip.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vip.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydesign/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2926">
+            <state relative-caret-position="-4123">
               <caret line="146" column="55" selection-start-line="146" selection-start-column="55" selection-end-line="146" selection-end-column="55" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
@@ -46,29 +34,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1406">
-              <caret line="74" column="79" selection-start-line="74" selection-start-column="79" selection-end-line="74" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/newmovie.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-196" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/movie.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2584" />
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -78,21 +52,35 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/register.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-503" />
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/single.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="74" column="146" lean-forward="true" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="146" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/vip.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="41" column="65" lean-forward="true" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
+            <state relative-caret-position="180">
+              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+              <folding>
+                <element signature="e#1981#1987#1#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradesign/urls.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -117,6 +105,11 @@
       </list>
     </option>
   </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="217" />
+    <option name="width" value="1128" />
+    <option name="height" value="858" />
+  </component>
   <component name="ProjectId" id="1QxyCnJtjDkmSZBBfS4ngNg6gdI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -124,6 +117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,7 +144,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,6 +277,7 @@
       <workItem from="1568795240411" duration="1478000" />
       <workItem from="1568796759310" duration="2177000" />
       <workItem from="1568804785348" duration="388000" />
+      <workItem from="1568809084045" duration="976000" />
     </task>
     <task id="LOCAL-00001" summary="tupian">
       <created>1568632229784</created>
@@ -359,13 +353,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4043000" />
+    <option name="totallyTimeSpent" value="5019000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="42" width="1128" height="858" extended-state="0" />
+    <frame x="0" y="217" width="1128" height="858" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18324125" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18600368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -379,7 +373,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32974428" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32974428" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -449,27 +443,15 @@
     <entry file="file://$PROJECT_DIR$/static/images/single.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/article.html" />
+    <entry file="file://$PROJECT_DIR$/templates/comment.html" />
+    <entry file="file://$PROJECT_DIR$/templates/index(1).html" />
+    <entry file="file://$PROJECT_DIR$/templates/loginlog.html" />
+    <entry file="file://$PROJECT_DIR$/templates/notice.html" />
+    <entry file="file://$PROJECT_DIR$/templates/readset.html" />
+    <entry file="file://$PROJECT_DIR$/templates/setting.html" />
     <entry file="file://$PROJECT_DIR$/static/images/search.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/article.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/comment.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydesign/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2926">
-          <caret line="146" column="55" selection-start-line="146" selection-start-column="55" selection-end-line="146" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index(1).html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -478,42 +460,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/loginlog.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newmovie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/notice.html">
+    <entry file="file://$PROJECT_DIR$/gradesign/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/readset.html">
+    <entry file="file://$PROJECT_DIR$/mydesign/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4123">
+          <caret line="146" column="55" selection-start-line="146" selection-start-column="55" selection-end-line="146" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-503" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/newmovie.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/movie.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2584" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/person.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/setting.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/single.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="74" column="146" lean-forward="true" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="146" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/vip.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="41" column="65" lean-forward="true" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
+        <state relative-caret-position="180">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <element signature="e#1981#1987#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -20,28 +20,46 @@
 
 {% block content %}
 <style>
-#vip{
-    float: left;
-}
-#vip li{
+
+#vip {
+    text-align: center;
+    margin: auto;
     list-style: none;
     font-size: 20px;
     color: white;
+}
+#hh {
+    text-align: center;
+    margin-top: 30px;
+}
+#money{
+    color: grey;
 }
 
 </style>
 
 <body>
-<h1 style="color:white;">{{ username }},
+<div id="hh">
+<h2 style="color:white;">亲爱的{{ username }},
     你想拥有力量吗？
-</h1>
-<div>
-    <ul id="vip">
-        <li><input type="radio" name="viptype" id="1" > 小海绵会员(1个月)<img src="/static/images/hmbb.gif" alt=""></li>
-        <li><input type="radio" name="viptype" id="2" > 派大星会员(3个月)<img src="/static/images/pdx.gif" alt=""></li>
-        <li><input type="radio" name="viptype" id="3" > 珊迪会员(6个月)<img src="/static/images/Susan.gif" alt=""></li>
-        <li><input type="radio" name="viptype" id="4" > 章鱼哥会员(12个月)<img src="/static/images/zyg.gif" alt=""></li>
-    </ul>
+</h2>
+</div>
+<div id="vip">
+
+    <form action="{% url 'vip' %}" method="post">
+        <table id="vip">
+    {{ crsf_token }}
+        <tr><td><input type="radio" name="viptype" id="1" > 小海绵会员(1个月)<img src="/static/images/hmbb.gif" alt=""></td>
+            <td id="money">10元 / 每月</td>
+        </tr>
+        <tr><td><input type="radio" name="viptype" id="2" > 派大星会员(3个月)<img src="/static/images/pdx.gif" alt=""></td></tr>
+        <tr><td><input type="radio" name="viptype" id="3" > 珊迪会员(6个月)<img src="/static/images/Susan.gif" alt=""></td></tr>
+        <tr><td><input type="radio" name="viptype" id="4" > 章鱼哥会员(12个月)<img src="/static/images/zyg.gif" alt=""></td></tr>
+            <tr><td>&nbsp;</td></tr>
+        <tr><td><button class="btn1" type="submit">确认购买</button></td></tr>
+        </table>
+    </form>
+
 </div>
 {#<div>#}
 {#<ul id="vip">#}
@@ -51,9 +69,9 @@
 {#    <li><input type="radio" name="viptype" id="4" > 章鱼哥会员(12个月)130</li>#}
 {#</ul>#}
 {#</div>#}
-<div>
-    <p style="font-size: 20px;color: white">{{ username }}</p>
-</div>
+{#<div>#}
+{#    <p style="font-size: 20px;color: white">{{ username }}</p>#}
+{#</div>#}
 </body>
 {% endblock %}
 
