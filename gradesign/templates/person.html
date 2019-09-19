@@ -5,6 +5,7 @@
     <!--<li style="list-style-type: none"><img src="{% static 'images/p1.png' %}" alt=""/></li>-->
     {% if username %}
         <li style="list-style-type: none"><p><a href="/person/">{{ username }}</a></p></li>
+        <li style="list-style-type: none"><img style="width: 30px;height: 30px" src="/static/images/vip1.jpg" alt="vip"></li>
         <li style="list-style-type: none"><p><a href="/quit/">退出</a></p></li>
     {% else %}
         <li style="list-style-type: none"><p><a href="/login/">立即登陆</a></p></li>
@@ -15,6 +16,9 @@
 {% block content %}
     <div class="content">
             <h2 class="m_3">个人中心</h2>
+            <p> &nbsp;</p>
+            <h3 class="m_3">&nbsp;&nbsp;我的收藏</h3>
+            <p> &nbsp;</p>
                 <div class="movie_top">
                     <nav class="col-md-9 movie_box">
                         <!-- Movie variant with time -->
@@ -86,7 +90,10 @@
                             </ul>
                         </div>
                         <!-- Movie variant with time -->
-                    </div>
+
+                    </nav>
+                </div>
+
                     <div class="col-md-3">
                         {% for side in side_recommend %}
                             <div class="movie_img">
@@ -105,7 +112,7 @@
                     </div>
                     <div class="clearfix"></div>
                 <!--</div>-->
-                <h1 class="recent">测试广告</h1>
+                <h3 class="recent">会员信息</h3>
                     <ul id="flexiselDemo3">
                         {% for ad in ad_list %}
                             <li><img src="/uploads/{{ ad.pic }}" class="img-responsive"/>

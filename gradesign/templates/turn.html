@@ -25,14 +25,28 @@
 	<body>
 		<center>
 			<div id="main">
-				<img style="height: 85px;width: 85px;" src=/static/images/xlb.jpg" alt="" />
+				<img style="height: 85px;width: 85px;" src="/static/images/xlb.jpg" alt="" />
 				<div id="box">
 					支付成功！
+                    还有<span id="sp">3</span>秒跳转到个人中心...
 				</div>
 			</div>
-			<a href="{% url '' %}">立即观影</a>
-			&nbsp;&nbsp;&nbsp;
-			<a href="">个人中心</a>
+
+            <script>
+                onload=function () {
+                    setInterval(go,1000)
+                };
+                var x=2;
+                function go() {
+
+                    if (x>=0){
+                        document.getElementById("sp").innerText=x;
+                    }else {
+                        location="{% url 'person' %}";
+                    }
+                    x--;
+                }
+            </script>
 		</center>
 	</body>
 </html>

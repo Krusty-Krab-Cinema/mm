@@ -364,9 +364,10 @@ def vip(request):
         times=request.POST.get('viptype')
         user.v_start = datetime.datetime.now()
         user.v_end = user.v_start+relativedelta(months=int(times))
+        user.is_vip = 1
         user.save()
-        # return redirect(reverse('jump'))
-        pass
+        return redirect(reverse('jump'))
+
 
 
     return render(request,'vip.html',{
@@ -376,4 +377,4 @@ def vip(request):
 
 
 def jump(request):
-    return None
+    return render(request,'turn.html')
