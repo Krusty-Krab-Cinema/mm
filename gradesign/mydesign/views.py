@@ -406,4 +406,4 @@ def payit(request):
     #              }}
 
     # logout(request)
-    return redirect(reverse('jump'))
+    return redirect(net)
