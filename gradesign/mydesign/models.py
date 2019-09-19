@@ -75,13 +75,12 @@ class Movie(models.Model):
     is_delete = models.BooleanField('是否删除', default=0)  # 是否删除，默认False
     is_carousel = models.BooleanField('是否首页轮播展示', default=0)  # 是否首页轮播图展示，默认False
     is_sidebar = models.BooleanField('侧边栏推荐展示', default=0)  # 是否侧边栏推荐展示，默认False
-    country = models.ForeignKey(Country, on_delete=models.DO_NOTHING, verbose_name='国家/地区')  # 外键关联
+    country = models.ForeignKey(Country, on_delete=models.CASCADE, verbose_name='国家/地区')  # 外键关联
     is_vipfilm = models.IntegerField('是否是vip电影',default=0) #  vip观看
 
     style_type = models.ManyToManyField(StyleType, verbose_name='风格类型')  # 多对多关联
     lead_role = models.ManyToManyField(LeadRole, verbose_name='主演')  # 多对多关联
     like = models.ManyToManyField(User, verbose_name='喜欢')  # 喜欢/收藏
-
 
     class Meta:
         db_table = 'movies'
@@ -91,8 +90,8 @@ class Movie(models.Model):
 
 # 浏览记录
 class Visited(models.Model):
-    m = models.ForeignKey('Movie', on_delete=models.DO_NOTHING)
-    u = models.ForeignKey('User', on_delete=models.DO_NOTHING)
+    m = models.ForeignKey('Movie', on_delete=models.CASCADE)
+    u = models.ForeignKey('User', on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'visited'
@@ -101,8 +100,8 @@ class Visited(models.Model):
 class Comment(models.Model):
     comment_content = models.TextField()  # 评论内容
     comment_time = models.DateTimeField(auto_now=True)  # 评论时间
-    movie_id = models.ForeignKey('Movie', on_delete=models.DO_NOTHING)
-    user_id = models.ForeignKey('User', on_delete=models.DO_NOTHING)
+    movie_id = models.ForeignKey('Movie', on_delete=models.CASCADE)
+    user_id = models.ForeignKey('User', on_delete=models.CASCADE)
 
     class Meta:
         db_table = 'comments'
