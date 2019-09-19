@@ -1,4 +1,6 @@
 import datetime
+import time
+
 from dateutil.relativedelta import relativedelta
 
 from django.shortcuts import render, redirect
@@ -292,9 +294,14 @@ def quit(request):
 def person(request):
     key = request.COOKIES.get('usernameKey')
     usernameKey = request.session.get(key, 0)
+    try:
+        username = request.GET.get('name')
+        print(username,'person')
+        currentuser = User.objects.get(username=username).id
 
-    token = request.COOKIES.get('userToken')
-    currentuser = User.objects.get(token=token).id
+    except:
+        token = request.COOKIES.get('userToken')
+        currentuser = User.objects.get(token=token).id
 
     results = Movie.objects.filter(like=currentuser)
     # 重新拼接处理封面图片的url以及出演人员的处理（默认显示3个主角）
@@ -362,25 +369,42 @@ def vip(request):
         user = User.objects.get(username=username)
         print(user)
     if request.method == 'POST':
-        times=request.POST.get('viptype')
-        user.v_start = datetime.datetime.now()
-        user.v_end = user.v_start+relativedelta(months=int(times))
-        user.is_vip = 1
-        user.save()
-        return redirect(reverse('payit'))
-
-
+            times=request.POST.get('viptype')
+            if times:
+                print(times)
+                user.v_start = datetime.datetime.now()
+                user.v_end = user.v_start+relativedelta(months=int(times))
+                user.is_vip = 1
+                user.save()
+                return redirect('/payit/?times={}&&name={}'.format(times,username))
+            else:
+                error_msg = '请选择会员类型'
+                return render(request,'vip.html',{'error_msg':error_msg})
 
     return render(request,'vip.html',{
-        'user': user,
-        'username':usernameKey
-    })
+            'user': user,
+            'username':usernameKey
+        })
 
 
 def jump(request):
-    return render(request,'turn.html')
+    username = request.GET.get('name')
+    print(username,'jump')
+    return render(request,'turn.html',locals())
 
 def payit(request):
+    times= request.GET.get('times')
+    username = request.GET.get('name')
+    print(times,type(times))
+    print(username)
+    if times == '1':
+        money = 10
+    elif times == '2':
+        money = 28
+    elif times == '3':
+        money = 58
+    else:
+        money = 108
     from alipay import AliPay
     alipay = AliPay(
         appid='2016101400683992',
@@ -390,12 +414,13 @@ def payit(request):
         sign_type="RSA2",
         debug=False
     )
+    no = str(int(time.time()))
     order_string = alipay.api_alipay_trade_page_pay(
-        out_trade_no="122312312312",
-        total_amount=30,
-        subject="macpro",
-        return_url="http://localhost:8000/",
-        notify_url="http://localhost:8000/",
+        out_trade_no=no,
+        total_amount=money,
+        subject="会员充值",
+        return_url="http://localhost:8000/person/?name={}".format(username),
+        # notify_url="http://localhost:8000/",
 
     )
     net = "https://openapi.alipaydev.com/gateway.do?{}".format(order_string)

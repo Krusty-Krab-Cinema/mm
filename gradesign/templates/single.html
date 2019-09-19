@@ -36,15 +36,15 @@
                         <p class="movie_option"><strong>年份: </strong>{{ single_movie.release_time | date:'Y' }}</p>
                         <p class="movie_option"><strong>类型:</strong>
                             <!--多对多-->
-                            {% for type in movie.style_type.all %}
-                                <a href="#">{{ type.style_type }}&nbsp;/&nbsp;</a>
+                            {% for type in single_movie.style_type.all %}
+                                <a href="#">{{ type.style_type }}&nbsp;&nbsp;</a>
                             {% endfor %}
                         </p>
                         <p class="movie_option"><strong>上映时间: </strong>{{ single_movie.release_time }}</p>
                         <p class="movie_option"><strong>导演: </strong><a href="#">{{ single_movie.director }} </a></p>
                         <p class="movie_option"><strong>演员: </strong>
                             {% for role in single_movie.lead_role.all %}
-                                <a href="#">{{ role.name }}&nbsp;/&nbsp;</a>
+                                <a href="#">{{ role.name }}&nbsp;&nbsp;</a>
                             {% endfor %}
                         </p>
                         <div class="down_btn">
