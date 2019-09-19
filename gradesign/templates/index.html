@@ -68,7 +68,11 @@
 {#                        </div>#}
 
                         <i class="icon5"></i><b>{{ recommend.like_count }}</b>
-                        <p style="text-align: center"><a href="/single/{{ recommend.id }}/" style="text-decoration: none;color: ;: ;">{{ recommend.name }}</a></p>
+                        <p style="text-align: center"><a href="/single/{{ recommend.id }}/" style="text-decoration: none;color: ;: ;">{{ recommend.name }}</a>&nbsp;
+                            {% ifequal recommend.is_vipfilm 1 %}
+                            <img style="width:15px;height: 15px" src="/static/images/lvip.jpg" alt="">
+                            {% endifequal %}
+                        </p>
                     </div>
                 {% endfor %}
                 <div class="clearfix"></div>
