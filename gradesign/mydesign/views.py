@@ -8,6 +8,7 @@ from django.contrib.auth.hashers import make_password, check_password
 from django.db import models
 from django.urls import reverse
 
+from gradesign.settings import APP_PRIVATE_KEY, ALIPAY_PUBLIC_KEY
 from .models import Movie, User, Comment, Advertise
 
 # Create your views here.
@@ -366,7 +367,7 @@ def vip(request):
         user.v_end = user.v_start+relativedelta(months=int(times))
         user.is_vip = 1
         user.save()
-        return redirect(reverse('jump'))
+        return redirect(reverse('payit'))
 
 
 
@@ -378,3 +379,31 @@ def vip(request):
 
 def jump(request):
     return render(request,'turn.html')
+
+def payit(request):
+    from alipay import AliPay
+    alipay = AliPay(
+        appid='2016101400683992',
+        app_notify_url=None,
+        app_private_key_string=APP_PRIVATE_KEY,
+        alipay_public_key_string=ALIPAY_PUBLIC_KEY,
+        sign_type="RSA2",
+        debug=False
+    )
+    order_string = alipay.api_alipay_trade_page_pay(
+        out_trade_no="122312312312",
+        total_amount=30,
+        subject="macpro",
+        return_url="http://localhost:8000/",
+        notify_url="http://localhost:8000/",
+
+    )
+    net = "https://openapi.alipaydev.com/gateway.do?{}".format(order_string)
+    # data = {
+    #     "msg": "ok",
+    #     "status": 200,
+    #     "data": {"pay_url": net + order_string
+    #              }}
+
+    # logout(request)
+    return redirect(reverse('jump'))

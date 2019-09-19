@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66557e39-fd24-4c3f-b08c-7a50d6df9c21" name="Default" comment="vip">
-      <change beforePath="$PROJECT_DIR$/.idea/gradesign.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradesign.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipay/alipay_public.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipay/app_private_key.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alipay/app_public_key.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradesign/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gradesign/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydesign/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydesign/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydesign/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydesign/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/person.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/person.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/turn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/turn.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mydesign/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="368" column="40" lean-forward="true" selection-start-line="368" selection-start-column="40" selection-end-line="368" selection-end-column="40" />
+            <state relative-caret-position="54">
+              <caret line="384" column="20" lean-forward="true" selection-start-line="384" selection-start-column="20" selection-end-line="384" selection-end-column="20" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -34,19 +34,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/gradesign/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="25" column="129" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="129" />
+            <state relative-caret-position="323">
+              <caret line="138" column="7" selection-start-line="138" selection-start-column="7" selection-end-line="138" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/turn.html">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="235">
+              <caret line="25" column="129" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="129" />
             </state>
           </provider>
         </entry>
@@ -54,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mydesign/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+            <state relative-caret-position="361">
+              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -63,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/person.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -98,40 +98,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/vip.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="63" column="60" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
-              <folding>
-                <element signature="e#1650#1656#1#HTML" expanded="true" />
-                <element signature="e#1863#1869#1#HTML" expanded="true" />
-                <element signature="e#2099#2105#1#HTML" expanded="true" />
-                <element signature="e#2334#2340#1#HTML" expanded="true" />
-                <element signature="e#1981#1987#1#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mydesign/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-666" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradesign/urls.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -144,15 +117,16 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/vip.html" />
-        <option value="$PROJECT_DIR$/mydesign/urls.py" />
         <option value="$PROJECT_DIR$/templates/turn.html" />
-        <option value="$PROJECT_DIR$/mydesign/views.py" />
         <option value="$PROJECT_DIR$/templates/person.html" />
+        <option value="$PROJECT_DIR$/mydesign/urls.py" />
+        <option value="$PROJECT_DIR$/gradesign/settings.py" />
+        <option value="$PROJECT_DIR$/mydesign/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="312" />
+    <option name="x" value="215" />
     <option name="y" value="42" />
     <option name="width" value="1128" />
     <option name="height" value="858" />
@@ -171,6 +145,11 @@
             <path>
               <item name="gradesign" type="b2602c69:ProjectViewProjectNode" />
               <item name="gradesign" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gradesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gradesign" type="462c0819:PsiDirectoryNode" />
+              <item name="alipay" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gradesign" type="b2602c69:ProjectViewProjectNode" />
@@ -202,7 +181,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/alipay" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -212,12 +191,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/alipay" />
+      <recent name="$PROJECT_DIR$/static/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/static/logo1" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -329,7 +309,7 @@
       <workItem from="1568795240411" duration="1478000" />
       <workItem from="1568796759310" duration="2177000" />
       <workItem from="1568804785348" duration="388000" />
-      <workItem from="1568809084045" duration="5363000" />
+      <workItem from="1568809084045" duration="6031000" />
     </task>
     <task id="LOCAL-00001" summary="tupian">
       <created>1568632229784</created>
@@ -415,14 +395,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568812169764</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="vip">
+      <created>1568856981211</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1568856981211</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9406000" />
+    <option name="totallyTimeSpent" value="10074000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="312" y="42" width="1128" height="858" extended-state="0" />
+    <frame x="392" y="42" width="1128" height="858" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18600368" />
@@ -558,17 +545,7 @@
     <entry file="file://$PROJECT_DIR$/templates/turn.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
-          <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydesign/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="368" column="40" lean-forward="true" selection-start-line="368" selection-start-column="40" selection-end-line="368" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -585,17 +562,7 @@
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
-          <caret line="25" column="129" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydesign/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+          <caret line="25" column="129" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="129" />
         </state>
       </provider>
     </entry>
@@ -614,6 +581,42 @@
             <element signature="e#769#775#0#HTML" expanded="true" />
             <element signature="e#793#799#0#HTML" expanded="true" />
             <element signature="e#2808#4629#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydesign/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alipay/alipay_public.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alipay/app_private_key.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alipay/app_public_key.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradesign/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="138" column="7" selection-start-line="138" selection-start-column="7" selection-end-line="138" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydesign/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="384" column="20" lean-forward="true" selection-start-line="384" selection-start-column="20" selection-end-line="384" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

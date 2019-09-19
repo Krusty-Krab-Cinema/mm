@@ -131,3 +131,12 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/uploads/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/uploads')
+
+# 应⽤用程序私钥
+APP_PRIVATE_KEY  = open(os.path.join(BASE_DIR,'alipay/app_private_key.txt')).read()
+# 应用程序公钥
+APP_PUBLIC_KEY = open(os.path.join(BASE_DIR,'alipay/app_public.txt')).read()
+# 支付宝公钥
+ALIPAY_PUBLIC_KEY = open(os.path.join(BASE_DIR,'alipay/alipay_public.txt')).read()
+# 沙箱APPID
+ALI_APP_ID = '2016101400683992'
