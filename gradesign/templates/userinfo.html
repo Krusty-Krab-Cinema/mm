@@ -21,10 +21,22 @@
         <br>
         <table align="center" style="font-size: 20px;font-weight: bolder;text-align: center">
             <tr>
+                <td colspan="2">
+                    {% ifequal user.is_vip 1 %}
+
+                        尊贵的VIP用户<span style="color: orange">{{ username }}</span>，您好！<br>
+                        {% else %}
+                        {{ username }}，欢迎登录！
+                    {% endifequal %}
+                </td>
+                <td></td>
+            </tr>
+            <tr style="height: 40px">
                 <td>用户名：</td>
                 <td>{{ user.username }}</td>
             </tr>
-            <tr>
+
+            <tr style="height: 40px">
                 <td>
                     邮箱：
                 </td>
@@ -32,15 +44,22 @@
                     {{ user.email }}
                 </td>
             </tr>
-            <tr>
-                <td>
-                    会员时间：
-                </td>
-                <td>
-                    {{ user.v_start }} -- {{ user.v_end }}
-                </td>
+
+            <tr style="height: 40px">
+                {% ifequal user.is_vip 1 %}
+                    <td>
+                        会员时间：
+                    </td>
+                    <td>
+                        {{ user.v_start }} -- {{ user.v_end }}
+                    </td>
+                {% else %}
+                    <td colspan="2">
+                        您暂未开启会员功能
+                    </td>
+                    <td></td>
+                {% endifequal %}
             </tr>
         </table>
-
     </div>
 {% endblock %}
