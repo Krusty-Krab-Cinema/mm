@@ -60,7 +60,7 @@ class User(models.Model):
         return self.username
 
 
-# 视频模型
+# 电影模型
 class Movie(models.Model):
     name = models.CharField('视频名称', max_length=200)  # 视频名称
     country = models.CharField('国家/地区', max_length=200)  # 国家/地区

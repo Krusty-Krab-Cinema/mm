@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66557e39-fd24-4c3f-b08c-7a50d6df9c21" name="Default" comment="pay">
+      <change beforePath="$PROJECT_DIR$/.idea/gradesign.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradesign.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydesign/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydesign/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydesign/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydesign/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydesign/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydesign/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movie.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/turn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/turn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/vip.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vip.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,108 +18,6 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mydesign/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-33">
-              <caret line="57" column="43" lean-forward="true" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradesign/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="135" column="57" lean-forward="true" selection-start-line="135" selection-start-column="57" selection-end-line="135" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="25" column="129" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="129" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mydesign/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/person.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="114" column="39" selection-start-line="114" selection-start-column="39" selection-end-line="114" selection-end-column="39" />
-              <folding>
-                <element signature="e#724#730#0#HTML" expanded="true" />
-                <element signature="e#763#769#0#HTML" expanded="true" />
-                <element signature="e#769#775#0#HTML" expanded="true" />
-                <element signature="e#793#799#0#HTML" expanded="true" />
-                <element signature="e#2808#4629#0#HTML" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-503" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/single.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
-              <folding>
-                <element signature="e#2193#2199#0#HTML" expanded="true" />
-                <element signature="e#2708#2714#0#HTML" expanded="true" />
-                <element signature="e#4374#4416#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mydesign/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1472" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/vip.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#td#0;n#tr#5;n#table#0;n#form#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -131,79 +30,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/person.html" />
-        <option value="$PROJECT_DIR$/gradesign/settings.py" />
-        <option value="$PROJECT_DIR$/alipay/app_private_key.txt" />
-        <option value="$PROJECT_DIR$/templates/vip.html" />
-        <option value="$PROJECT_DIR$/templates/turn.html" />
-        <option value="$PROJECT_DIR$/mydesign/urls.py" />
-        <option value="$PROJECT_DIR$/mydesign/views.py" />
-        <option value="$PROJECT_DIR$/templates/single.html" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="89" />
-    <option name="y" value="55" />
-    <option name="width" value="1128" />
-    <option name="height" value="858" />
-  </component>
   <component name="ProjectId" id="1QxyCnJtjDkmSZBBfS4ngNg6gdI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="gradesign" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gradesign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gradesign" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gradesign" type="462c0819:PsiDirectoryNode" />
-              <item name="alipay" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gradesign" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gradesign" type="462c0819:PsiDirectoryNode" />
-              <item name="gradesign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gradesign" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gradesign" type="462c0819:PsiDirectoryNode" />
-              <item name="mydesign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gradesign" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gradesign" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gradesign" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gradesign" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/alipay" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -213,13 +46,12 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/alipay" />
-      <recent name="$PROJECT_DIR$/static/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/static/logo1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -331,7 +163,7 @@
       <workItem from="1568795240411" duration="1478000" />
       <workItem from="1568796759310" duration="2177000" />
       <workItem from="1568804785348" duration="388000" />
-      <workItem from="1568809084045" duration="12012000" />
+      <workItem from="1568809084045" duration="5363000" />
     </task>
     <task id="LOCAL-00001" summary="tupian">
       <created>1568632229784</created>
@@ -441,36 +273,6 @@
     <option name="localTasksCounter" value="16" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16055000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="89" y="55" width="1128" height="858" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18600368" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32974428" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -480,12 +282,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -521,152 +317,5 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gradesign$models.coverage" NAME="models Coverage Results" MODIFIED="1568729832169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mydesign" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/images/single.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/article.html" />
-    <entry file="file://$PROJECT_DIR$/templates/comment.html" />
-    <entry file="file://$PROJECT_DIR$/templates/index(1).html" />
-    <entry file="file://$PROJECT_DIR$/templates/loginlog.html" />
-    <entry file="file://$PROJECT_DIR$/templates/notice.html" />
-    <entry file="file://$PROJECT_DIR$/templates/readset.html" />
-    <entry file="file://$PROJECT_DIR$/templates/setting.html" />
-    <entry file="file://$PROJECT_DIR$/static/images/search.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="74" column="79" selection-start-line="74" selection-start-column="79" selection-end-line="74" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/newmovie.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/movie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2584" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradesign/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/xlb.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="25" column="129" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-503" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/person.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="114" column="39" selection-start-line="114" selection-start-column="39" selection-end-line="114" selection-end-column="39" />
-          <folding>
-            <element signature="e#724#730#0#HTML" expanded="true" />
-            <element signature="e#763#769#0#HTML" expanded="true" />
-            <element signature="e#769#775#0#HTML" expanded="true" />
-            <element signature="e#793#799#0#HTML" expanded="true" />
-            <element signature="e#2808#4629#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradesign/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="135" column="57" lean-forward="true" selection-start-line="135" selection-start-column="57" selection-end-line="135" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alipay/alipay_public.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alipay/app_private_key.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/alipay/app_public_key.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/vip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#td#0;n#tr#5;n#table#0;n#form#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydesign/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/turn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="44" column="49" lean-forward="true" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydesign/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1472" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mydesign/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33">
-          <caret line="57" column="43" lean-forward="true" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
-          <folding>
-            <element signature="e#2193#2199#0#HTML" expanded="true" />
-            <element signature="e#2708#2714#0#HTML" expanded="true" />
-            <element signature="e#4374#4416#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

@@ -29,6 +29,7 @@ def index(request):
         i.new_link = 'https://img3.doubanio.com/view/photo/l/public/' + str(i.cover_link).split('_')[0] + '.webp'
         if i.new_link.count('.webp') > 1:
             i.new_link = i.new_link[ : len(i.new_link) - 5]
+
     # 推荐页面显示的视频小图（8个）
     recommend_list = Movie.objects.order_by('-mark')[:8]
     for r in recommend_list:

@@ -37,7 +37,7 @@
                         <p class="movie_option"><strong>类型:</strong>
                             <!--多对多-->
                             {% for type in single_movie.style_type.all %}
-                                <a href="#">{{ type.style_type }}&nbsp;&nbsp;</a>
+                                <a href="#">{{ type.style_type }}/&nbsp;&nbsp;</a>
                             {% endfor %}
                         </p>
                         <p class="movie_option"><strong>上映时间: </strong>{{ single_movie.release_time }}</p>
