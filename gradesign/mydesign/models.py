@@ -41,6 +41,7 @@ class User(models.Model):
     subscribe = models.CharField('是否订阅电子杂志', max_length=4, default='on')  # 用户是否订阅杂志on/off
     token = models.CharField(max_length=250, default='')
 
+    is_superuser = models.IntegerField('管理员',default=0) #  默认普通用户,1管理员用户.
     is_vip = models.IntegerField('vip用户',default=0) #   默认普通用户,1vip用户.
 
     v_start=models.DateField(default='2019-01-01')
