@@ -356,6 +356,27 @@ def person(request):
         'results':results,
     })
 
+# 我的信息
+def user(request):
+    key = request.COOKIES.get('usernameKey')
+    usernameKey = request.session.get(key, 0)
+    key = request.COOKIES.get('usernameKey')
+    username = request.session.get(key, 0)
+    if username != 0:
+        user=User.objects.get(username=username)
+
+    try:
+        username = request.GET.get('name')
+        print(username, 'person')
+        currentuser = User.objects.get(username=username).id
+    except:
+        token = request.COOKIES.get('userToken')
+        currentuser = User.objects.get(token=token).id
+
+    return render(request,'userinfo.html',{
+        'username':usernameKey,
+        'user':user
+    })
 
 def play(request):
 

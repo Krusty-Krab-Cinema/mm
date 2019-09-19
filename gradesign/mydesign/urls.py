@@ -14,6 +14,7 @@ urlpatterns = [
     url(r'^register/$', views.register),
     url(r'^quit/$', views.quit),
     url(r'^person/', views.person,name='person'),
+    url(r'^user/',views.user,name='user'),
     url(r'^play/',views.play,name='play'),
     url(r'^vip/',views.vip,name='vip'),
     url(r'^jump/',views.jump,name='jump'),
