@@ -62,35 +62,37 @@
 
 
         <p> &nbsp;</p>
-    <div style="background: #808080; opacity: 0.5; border-radius: 80px;height: 600px;">
+    <div style="background: #a6e1ec; border-radius: 80px;height: 600px;">
         <section class="hero bg-indigo">
             {#            <div style="margin-left: 400px">#}
-            <center style="opacity: 1">
+            <center style="opacity: 1;filter: alpha(opacity=40)">
                 <img src="/static/images/xbwlogo.jpg" style="border-radius: 500px;height: 300px;width: 300px"
                      class="brand-logo img-fluid rounded-circle"/>
-            </center>
+
             {#            </div>#}
-            <div style="margin-left: 50px">
+{#            <div style="margin-left: 50px">#}
                 {% ifequal user.is_vip 1 %}
+
                     <h1 class="pt-4 text-white h2">尊贵的VIP用户：<span>{{ username }}</span>,<span>您好</span>
                         <br/>您的个人信息如下：</h1><br>
-                    </div>
+
+{#            </div>#}
                     <div style="margin-left: 300px">
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon" id="sizing-addon1">&nbsp;用户名&nbsp;</span>
-                            <input type="text" class="form-control" aria-describedby="sizing-addon1"
-                                   style="width: 350px;" value="{{ username }}">
+                            <span type="text" class="form-control" aria-describedby="sizing-addon1"
+                                  style="width: 350px;" value="">{{ username }}</span>
                         </div>
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon"
                                   id="sizing-addon1">&nbsp;&nbsp;邮&nbsp;&nbsp;箱&nbsp;&nbsp;</span>
-                            <input type="text" class="form-control" aria-describedby="sizing-addon1"
-                                   style="width: 350px;" value="{{ user.email }}">
+                            <span class="form-control" aria-describedby="sizing-addon1"
+                                  style="width: 350px;">{{ user.email }}</span>
                         </div>
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon" id="sizing-addon1">VIP时间</span>
-                            <input type="text" class="form-control" aria-describedby="sizing-addon1"
-                                   style="width: 350px;" value="{{ user.v_start }}--{{ user.v_end }}">
+                            <span type="text" class="form-control" aria-describedby="sizing-addon1"
+                                  style="width: 350px;" value="">{{ user.v_start }}--{{ user.v_end }}</span>
                         </div>
 
                     </div>
@@ -110,13 +112,15 @@
                                    style="width: 350px;" value="{{ user.email }}">
                         </div>
                         <div class="input-group input-group-lg">
-                            您还未开启<span><a style="font-size: 15px;color: orangered;text-decoration: none" href="{% url 'vip' %}">VIP</a></span>特权
+{#                            <span class="input-group-addon" id="sizing-addon1">VIP时间</span>#}
+                            您还未开启<span><a style="font-size: 15px;color: orangered;text-decoration: none" href="{% url 'vip' %}">VIP</a>特权</span>
 {#                            <span class="input-group-addon" id="sizing-addon1">VIP时间</span>#}
 {#                            <input type="text" class="form-control" aria-describedby="sizing-addon1"#}
 {#                                   style="width: 350px;" value="">#}
                         </div>
 
                     </div>
+                    </center>
 {#                    <p class="mt-4 lead text-white"><br>#}
 {#                        用户名： <span>{{ username }}</span> <br>#}
 {#                        邮箱：　<span>{{ user.email }}</span> <br>#}
