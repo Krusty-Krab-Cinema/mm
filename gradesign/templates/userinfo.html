@@ -62,9 +62,10 @@
 
 
         <p> &nbsp;</p>
+    <div style="background: #808080; opacity: 0.5; border-radius: 80px;height: 600px;">
         <section class="hero bg-indigo">
             {#            <div style="margin-left: 400px">#}
-            <center>
+            <center style="opacity: 1">
                 <img src="/static/images/xbwlogo.jpg" style="border-radius: 500px;height: 300px;width: 300px"
                      class="brand-logo img-fluid rounded-circle"/>
             </center>
@@ -96,19 +97,41 @@
                 {% else %}
                     <h1 class="pt-4 text-white h2">亲爱的用户：<span>{{ username }}</span>,<span>您好</span>
                         <br/>您的个人信息如下：</h1>
-                    <p class="mt-4 lead text-white"><br>
-                        用户名： <span>{{ username }}</span> <br>
-                        邮箱：　<span>{{ user.email }}</span> <br>
-                        您还未开启<span><a style="font-size: 15px;color: orangered;text-decoration: none"
-                                      href="{% url 'vip' %}">VIP</a></span>特权
-                    </p>
+                    <div style="margin-left: 300px">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="sizing-addon1">&nbsp;用户名&nbsp;</span>
+                            <input type="text" class="form-control" aria-describedby="sizing-addon1"
+                                   style="width: 350px;" value="{{ username }}">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"
+                                  id="sizing-addon1">&nbsp;&nbsp;邮&nbsp;&nbsp;箱&nbsp;&nbsp;</span>
+                            <input type="text" class="form-control" aria-describedby="sizing-addon1"
+                                   style="width: 350px;" value="{{ user.email }}">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            您还未开启<span><a style="font-size: 15px;color: orangered;text-decoration: none" href="{% url 'vip' %}">VIP</a></span>特权
+{#                            <span class="input-group-addon" id="sizing-addon1">VIP时间</span>#}
+{#                            <input type="text" class="form-control" aria-describedby="sizing-addon1"#}
+{#                                   style="width: 350px;" value="">#}
+                        </div>
+
+                    </div>
+{#                    <p class="mt-4 lead text-white"><br>#}
+{#                        用户名： <span>{{ username }}</span> <br>#}
+{#                        邮箱：　<span>{{ user.email }}</span> <br>#}
+{#                        您还未开启<span><a style="font-size: 15px;color: orangered;text-decoration: none"#}
+{#                                      href="{% url 'vip' %}">VIP</a></span>特权#}
+{#                    </p>#}
                 {% endifequal %}
             <!--<div class="pt-3">
                 <a href="#" class="btn btn-white-alt text-blue btn-lg">
                     Hire me!
                 </a>
             </div>-->
+{#        </div>#}
+
+        </section>
     </div>
-    </section>
     </div>
 {% endblock %}
