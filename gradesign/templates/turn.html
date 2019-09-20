@@ -27,8 +27,8 @@
 			<div id="main">
 				<img style="height: 85px;width: 85px;" src="/static/images/xlb.jpg" alt="" />
 				<div id="box">
-					支付成功！
-                    还有<span id="sp">3</span>秒跳转到个人中心...
+					vip影片仅会员可观看
+                    还有<span id="sp">3</span>秒跳转到充值中心...
 				</div>
 			</div>
 
@@ -42,7 +42,7 @@
                     if (x>=0){
                         document.getElementById("sp").innerText=x;
                     }else {
-                        location="{% url 'person' %}?user={{ username }}";
+                        location="{% url 'vip' %}";
                     }
                     x--;
                 }

@@ -60,6 +60,7 @@
 
 
                         <div class="clearfix"></div>
+                        {% if search_list.count__gt == 6 %}
                         <div aria-label="Page navigation">
                             <!--<span class="step-links">-->
                             <ul class="pagination" style="display: block">
@@ -93,6 +94,7 @@
                             <!--</span>-->
                             </ul>
                         </div>
+                    {% endif %}
                         <!-- Movie variant with time -->
                     </div>
                     <div class="col-md-3">

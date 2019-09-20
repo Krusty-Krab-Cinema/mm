@@ -72,7 +72,11 @@
                                     <a id="is_like" url="{{ single_movie.id }}" class="btn1" href="#" {% if is_like %}style="background-color: #3f444e"{% endif %}>{% if is_like %}取消收藏{% else %}我要收藏{% endif %}</a>
                                     <br>
                                     <br>
-                                    <button class="btn1" ><a href="{% url 'play'  %}" style="text-decoration: none;color: white">点击观看</a></button>
+
+                                    <button class="btn1" ><a href="{% url 'play' mid %}?user={{ user }}" style="text-decoration: none;color: white">点击观看</a></button>
+                                    {% ifequal single_movie.is_vipfilm 1 %}
+                                    <span style="font-size: 5px;color: #3D3D3D">该影片为VIP影片，会员可免费观看</span>
+                                    {% endifequal %}
                                 {% endif %}
 
 

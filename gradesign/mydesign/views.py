@@ -1,4 +1,5 @@
 import datetime
+import json
 import time
 
 from dateutil.relativedelta import relativedelta
@@ -149,6 +150,7 @@ def movie(request, tid):
     elif tid == '0':
         key_word = request.POST.get('keyword')
         search_list = Movie.objects.filter(name__contains=key_word)
+        print(search_list.count())
 
 
     # 重新拼接处理封面图片的url以及出演人员的处理（默认显示3个主角）
@@ -164,7 +166,6 @@ def movie(request, tid):
         # print(s.s_lead)
 
         s.like_count = len(s.like.all())  # 视频被收藏的总数
-
 
     paginator = Paginator(search_list, 6) # 一页显示 6 条
     page = request.GET.get('page')
@@ -378,10 +379,16 @@ def user(request):
         'user':user
     })
 
-def play(request):
+def play(request,mid):
+    userkey=request.GET.get('user')
+    user=User.objects.get(username=userkey)
+    if user.is_vip == 1:
+        playmovie=Movie.objects.get(id=mid)
+        print(playmovie.imdb_link,type(playmovie.imdb_link))
 
-
-    return render(request,'newmovie.html')
+        return render(request,'newmovie.html',{'ffid': json.dumps(playmovie.imdb_link)})
+    else:
+        return render(request,'turn.html')
 
 def vip(request):
     key = request.COOKIES.get('usernameKey')
