@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66557e39-fd24-4c3f-b08c-7a50d6df9c21" name="Default" comment="super">
+    <list default="true" id="66557e39-fd24-4c3f-b08c-7a50d6df9c21" name="Default" comment="play">
+      <change afterPath="$PROJECT_DIR$/../storeproject1/storeproject/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydesign/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydesign/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydesign/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mydesign/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/movie.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/newmovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/newmovie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/turn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/turn.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storeproject1/storeproject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../storeproject1/storeproject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storeproject1/storeproject/.idea/storeproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../storeproject1/storeproject/.idea/storeproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../storeproject1/storeproject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../storeproject1/storeproject/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,37 +20,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mydesign/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="388" column="85" selection-start-line="388" selection-start-column="85" selection-end-line="388" selection-end-column="85" />
+            <state relative-caret-position="174">
+              <caret line="385" column="57" selection-start-line="385" selection-start-column="57" selection-end-line="385" selection-end-column="57" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#527#1551#0" />
-                <element signature="e#1587#2080#0" />
-                <element signature="e#4179#6508#0" />
-                <element signature="e#6541#7421#0" />
-                <element signature="e#7457#9074#0" />
-                <element signature="e#9145#9185#0" />
-                <element signature="e#11127#11740#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/vip.html">
+        <entry file="file://$PROJECT_DIR$/templates/turn.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-826" />
+            <state relative-caret-position="302">
+              <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+            </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/vip.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/single.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="178">
               <caret line="71" column="58" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
+              <folding>
+                <element signature="e#4101#4150#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/newmovie.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
@@ -99,14 +101,14 @@
         <option value="$PROJECT_DIR$/mydesign/urls.py" />
         <option value="$PROJECT_DIR$/templates/single.html" />
         <option value="$PROJECT_DIR$/templates/turn.html" />
-        <option value="$PROJECT_DIR$/mydesign/views.py" />
         <option value="$PROJECT_DIR$/templates/newmovie.html" />
+        <option value="$PROJECT_DIR$/mydesign/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="284" />
-    <option name="y" value="174" />
+    <option name="x" value="301" />
+    <option name="y" value="99" />
     <option name="width" value="1261" />
     <option name="height" value="790" />
   </component>
@@ -282,7 +284,8 @@
       <workItem from="1568881625080" duration="1287000" />
       <workItem from="1568885794554" duration="690000" />
       <workItem from="1568893076912" duration="1253000" />
-      <workItem from="1568941836059" duration="4635000" />
+      <workItem from="1568941836059" duration="5088000" />
+      <workItem from="1568967835520" duration="1643000" />
     </task>
     <task id="LOCAL-00001" summary="tupian">
       <created>1568632229784</created>
@@ -410,17 +413,24 @@
       <option name="project" value="LOCAL" />
       <updated>1568882379303</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="play">
+      <created>1568949157382</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1568949157382</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12550000" />
+    <option name="totallyTimeSpent" value="14646000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="284" y="174" width="1261" height="790" extended-state="0" />
+    <frame x="301" y="99" width="1261" height="790" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1804758" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18293683" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -481,7 +491,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tupian" />
-    <MESSAGE value="play" />
     <MESSAGE value="vipfunction of web" />
     <MESSAGE value="show vip signal" />
     <MESSAGE value="new user" />
@@ -490,7 +499,8 @@
     <MESSAGE value="vip" />
     <MESSAGE value="pay" />
     <MESSAGE value="super" />
-    <option name="LAST_COMMIT_MESSAGE" value="super" />
+    <MESSAGE value="play" />
+    <option name="LAST_COMMIT_MESSAGE" value="play" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gradesign$models.coverage" NAME="models Coverage Results" MODIFIED="1568729832169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mydesign" />
@@ -504,13 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="102" column="72" selection-start-line="102" selection-start-column="72" selection-end-line="102" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -545,25 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="71" column="58" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/turn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/vip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-826" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/movie.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -571,20 +555,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mydesign/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/vip.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="388" column="85" selection-start-line="388" selection-start-column="85" selection-end-line="388" selection-end-column="85" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#527#1551#0" />
-            <element signature="e#1587#2080#0" />
-            <element signature="e#4179#6508#0" />
-            <element signature="e#6541#7421#0" />
-            <element signature="e#7457#9074#0" />
-            <element signature="e#9145#9185#0" />
-            <element signature="e#11127#11740#0" />
-          </folding>
+        <state relative-caret-position="722">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -592,6 +569,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/turn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/single.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="71" column="58" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
+          <folding>
+            <element signature="e#4101#4150#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydesign/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="385" column="57" selection-start-line="385" selection-start-column="57" selection-end-line="385" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

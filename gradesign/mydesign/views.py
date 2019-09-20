@@ -382,13 +382,16 @@ def user(request):
 def play(request,mid):
     userkey=request.GET.get('user')
     user=User.objects.get(username=userkey)
-    if user.is_vip == 1:
-        playmovie=Movie.objects.get(id=mid)
-        print(playmovie.imdb_link,type(playmovie.imdb_link))
-
-        return render(request,'newmovie.html',{'ffid': json.dumps(playmovie.imdb_link)})
+    playmovie=Movie.objects.get(id=mid)
+    print(playmovie.imdb_link, type(playmovie.imdb_link))
+    if playmovie.is_vipfilm == 1:
+        if user.is_vip == 1:
+            return render(request,'newmovie.html',{'ffid': json.dumps(playmovie.imdb_link)})
+        else:
+            return render(request,'turn.html')
     else:
-        return render(request,'turn.html')
+        return render(request, 'newmovie.html', {'ffid': json.dumps(playmovie.imdb_link)})
+
 
 def vip(request):
     key = request.COOKIES.get('usernameKey')
