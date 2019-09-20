@@ -296,6 +296,10 @@ def quit(request):
 def person(request):
     key = request.COOKIES.get('usernameKey')
     usernameKey = request.session.get(key, 0)
+    key = request.COOKIES.get('usernameKey')
+    username = request.session.get(key, 0)
+    if username != 0:
+        user = User.objects.get(username=username)
     try:
         username = request.GET.get('name')
         print(username,'person')
@@ -351,6 +355,7 @@ def person(request):
         print(a.pic)
 
     return render(request, 'person.html', {
+        'user':user,
         'username':usernameKey,
         'side_recommend': side_recommend,
         'ad_list': ad_list,
