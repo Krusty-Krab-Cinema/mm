@@ -36,31 +36,38 @@
         <style>
             .mylead:link, .mylead:visited {
                 display: block;
-                width: 150px;
+                width: 400px;
                 font-size: 20px;
                 font-weight: bold;
                 color: #FFFFFF;
-                background-color: #3f444e;
+                background-color: #888888;
                 text-align: center;
                 padding: 4px;
                 text-decoration: none;
                 text-transform: uppercase;
             }
             .mylead:hover, .mylead:active {
-                background-color: #cc0000;
+                background-color: #5bc0de;
             }
         </style>
 
-        <ul style="list-style-type:none;margin:0;padding:0;overflow:hidden;">
-            <li style="float:left;"><a class="mylead" href="{% url 'person' %}">我的收藏</a></li>
-            <li style="float:left;"><a class="mylead" href="{% url 'user' %}">我的信息</a></li>
-        </ul>
+
+            <div style="margin-left: 150px">
+                <ul style="list-style-type:none;margin:0;padding:0;overflow:hidden;">
+                    <li style="float:left;width: 40%"><a class="mylead" href="{% url 'person' %}">我的收藏</a></li>
+                    <li style="float:left;width: 40%"><a class="mylead" href="{% url 'user' %}">我的信息</a></li>
+                </ul>
+            </div>
+
+
         <p> &nbsp;</p>
         <section class="hero bg-indigo">
-            <div style="margin-left: 400px">
-                <img src="/static/images/xhead.jpg" style="height: 200px;width: 200px"
+{#            <div style="margin-left: 400px">#}
+                <center>
+                <img src="/static/images/xbwlogo.jpg" style="border-radius: 500px;height: 300px;width: 300px"
                      class="brand-logo img-fluid rounded-circle"/>
-            </div>
+                </center>
+{#            </div>#}
             <div style="margin-left: 50px">
                 {% ifequal user.is_vip 1 %}
                     <h1 class="pt-4 text-white h2">尊贵的VIP用户：<span>{{ username }}</span>,<span>您好</span>
@@ -83,9 +90,7 @@
                             <input type="text" class="form-control" aria-describedby="sizing-addon1"
                                    style="width: 350px;" value="{{ user.v_start }}--{{ user.v_end }}">
                         </div>
-                        {#                                    用户名： <span>{{ username }}</span> <br>#}
-                        {#                                    邮箱：　<span>{{ user.email }}</span> <br>#}
-                        {#                                    您的VIP时间为：{{user.v_start}}--{{user.v_end}}#}
+
                     </div>
                 {% else %}
                     <h1 class="pt-4 text-white h2">亲爱的用户：<span>{{ username }}</span>,<span>您好</span>
