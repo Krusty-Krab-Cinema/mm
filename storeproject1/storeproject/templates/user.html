@@ -35,11 +35,12 @@
 					<table border="1" cellspacing="0" cellpadding="0">
 						<tr>
 							<td width="66px" class="tdColor tdC">序号</td>
-							<td width="335px" class="tdColor">电影名</td>
-							<td width="300px" class="tdColor">导演</td>
+							<td width="200px" class="tdColor">电影名</td>
+							<td width="200px" class="tdColor">导演</td>
                             <td width="200px" class="tdColor">上映时间</td>
-{#							<td width="630px" class="tdColor">简介</td>#}
-							<td width="130px" class="tdColor">操作</td>
+							<td width="100px" class="tdColor">时长</td>
+                            <td width="185px" class="tdColor">电影类型</td>
+							<td width="80px" class="tdColor">操作</td>
 						</tr>
                         {% for mv in mvs %}
                             {% if mv.is_delete == 0 %}
@@ -48,7 +49,11 @@
 							<td>{{ mv.name }}</td>
 							<td>{{ mv.director }}</td>
                             <td>{{ mv.release_time }}</td>
-{#							<td>{{ mv.summary }}</td>#}
+							<td>{{ mv.length }}分钟</td>
+                            <td>{% if mv.is_vipfilm == 1 %}vip电影{% else %}普通的电影
+
+                            {% endif %}
+                            </td>
 							<td><a href="{% url 'delmv' mv.id %}"><img class="operation"
 									src="/static/img/delete.png"></a> </td>
 						</tr>{% endif %}{% endfor %}

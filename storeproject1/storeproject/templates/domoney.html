@@ -1,6 +1,22 @@
 {% extends 'index.html' %}
 {% block a %}
-    <div style="margin-left: 300px;font-size: 80px" >$$$$$$$$4 <br>挣钱挣钱</div>
+
+    <div style="margin-left: 300px;" >&nbsp;&nbsp;&nbsp;
+        <br><br><br>
+    {% for users in a %}
+        <table border="1" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="210px">今日开通会员名单</td>
+            <td width="210px">{{ users.username }}
+            </td>
+            <td width="210px">会员截止日期</td>
+            <td width="210px">{{ users.v_end }}</td>
+        </tr>
+
+
+        </table>
+    {% endfor %}
+    </div>
 
 
 {% endblock %}
