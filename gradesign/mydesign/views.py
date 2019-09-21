@@ -91,16 +91,22 @@ def single(request, mid):
     else:
         is_like = 3
 
-    single_movie.single_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + \
-                               str(single_movie.cover_link).split('_')[0] + '.webp'
-    if single_movie.single_link.count('.webp') > 1:
+    # single_movie.single_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + \
+    #                            str(single_movie.cover_link).split('_')[0] + '.webp'
+    single_movie.single_link = '/static/pics/' + \
+                               str(single_movie.cover_link).split('_')[0] + '.jpg'
+    if single_movie.single_link.count('.jpg') > 1:
         single_movie.single_link = single_movie.single_link[: len(single_movie.single_link) - 5]
 
     # 侧边栏推荐
     side_recommend = Movie.objects.order_by('-mark')[ : 3]
     for s in side_recommend:
-        s.new_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(s.cover_link).split('_')[0] + '.webp'
-        if s.new_link.count('.webp') > 1:
+        # s.new_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(s.cover_link).split('_')[0] + '.webp'
+        # if s.new_link.count('.webp') > 1:
+        # if s.new_link.count('.webp') > 1:
+
+        s.new_link = '/static/pics/' + str(s.cover_link).split('_')[0] + '.jpg'
+        if s.new_link.count('.jpg') > 1:
             s.new_link = s.new_link[ : len(s.new_link) - 5]
 
         s.like_count = len(s.like.all())
@@ -163,8 +169,10 @@ def movie(request, tid):
     # 重新拼接处理封面图片的url以及出演人员的处理（默认显示3个主角）
     for s in search_list:
         # 封面图片的链接
-        s.slink = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(s.cover_link).split('_')[0] + '.webp'
-        if s.slink.count('.webp') > 1:
+        # s.slink = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(s.cover_link).split('_')[0] + '.webp'
+        # if s.slink.count('.webp') > 1:
+        s.slink = '/static/pics/' + str(s.cover_link).split('_')[0] + '.jpg'
+        if s.slink.count('.jpg') > 1:
             s.slink = s.slink[ : len(s.slink) - 5]
         # print(s.slink)
 
@@ -192,9 +200,12 @@ def movie(request, tid):
     # 侧边栏推荐
     side_recommend = Movie.objects.order_by('-mark')[: 3]
     for s in side_recommend:
-        s.new_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(s.cover_link).split('_')[
-            0] + '.webp'
-        if s.new_link.count('.webp') > 1:
+        # s.new_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(s.cover_link).split('_')[
+        #     0] + '.webp'
+        # if s.new_link.count('.webp') > 1:
+        s.new_link = '/statics/pics/' + str(s.cover_link).split('_')[
+            0] + '.jpg'
+        if s.new_link.count('.jpg') > 1:
             s.new_link = s.new_link[: len(s.new_link) - 5]
 
         s.like_count = len(s.like.all())
@@ -220,24 +231,20 @@ def login(request):
     else:
         nickname = request.POST.get('nickname')
         password = request.POST.get('password')
-
         # 查询用户是否存在
         try:
             u = User.objects.get(username=nickname)
         except User.DoesNotExist as e:
             return redirect('/login/')
-
         # 如果存在,验证密码是否正确
         if password != u.password:
             return redirect('/login/')
-
         # 登陆成功
         response = HttpResponseRedirect('/')
         token = make_password(nickname)
         u.token = token
         u.save()
         response.set_cookie('userToken', token)
-
         request.session['username'] = u.username
         response.set_cookie('usernameKey', 'username')
         if u.v_end < datetime.date.today():
@@ -322,9 +329,10 @@ def person(request):
     # 重新拼接处理封面图片的url以及出演人员的处理（默认显示3个主角）
     for s in results:
         # 封面图片的链接
-        s.slink = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(s.cover_link).split('_')[
-            0] + '.webp'
-        if s.slink.count('.webp') > 1:
+        # s.slink = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(s.cover_link).split('_')[
+        #     0] + '.webp'
+        s.slink = '/static/pics/' + str(s.cover_link).split('_')[0] + '.jpg'
+        if s.slink.count('.jpg') > 1:
             s.slink = s.slink[: len(s.slink) - 5]
         # print(s.slink)
         # 主角
@@ -350,9 +358,11 @@ def person(request):
     # 侧边栏推荐
     side_recommend = Movie.objects.order_by('-mark')[: 3]
     for s in side_recommend:
-        s.new_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(s.cover_link).split('_')[
-            0] + '.webp'
-        if s.new_link.count('.webp') > 1:
+        # s.new_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(s.cover_link).split('_')[
+        #     0] + '.webp'
+        s.new_link = '/static/pics/' + str(s.cover_link).split('_')[
+            0] + '.jpg'
+        if s.new_link.count('.jpg') > 1:
             s.new_link = s.new_link[: len(s.new_link) - 5]
 
         s.like_count = len(s.like.all())
@@ -379,7 +389,6 @@ def user(request):
     username = request.session.get(key, 0)
     if username != 0:
         user=User.objects.get(username=username)
-
     try:
         username = request.GET.get('name')
         print(username, 'person')
@@ -387,7 +396,14 @@ def user(request):
     except:
         token = request.COOKIES.get('userToken')
         currentuser = User.objects.get(token=token).id
-
+        # print(111111)
+    if request.method =='POST':
+        # print(2222222)
+        pwd = request.POST.get('password')
+        # print(pwd)
+        user.password = pwd
+        user.save()
+        return redirect('/user/')
     return render(request,'userinfo.html',{
         'username':usernameKey,
         'user':user

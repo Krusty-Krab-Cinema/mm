@@ -62,7 +62,7 @@
 
 
         <p> &nbsp;</p>
-    <div style="background: #a6e1ec; border-radius: 80px;height: 600px;">
+    <div style="background: #a6e1ec; border-radius: 80px;height: 700px;">
         <section class="hero bg-indigo">
             {#            <div style="margin-left: 400px">#}
             <center style="opacity: 1;filter: alpha(opacity=40)">
@@ -71,6 +71,7 @@
 
             {#            </div>#}
 {#            <div style="margin-left: 50px">#}
+                <form action="/user/" method="post">
                 {% ifequal user.is_vip 1 %}
 
                     <h1 class="pt-4 text-white h2">尊贵的VIP用户：<span>{{ username }}</span>,<span>您好</span>
@@ -85,6 +86,12 @@
                         </div>
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon"
+                                  id="sizing-addon1">&nbsp;&nbsp;密&nbsp;&nbsp;码&nbsp;&nbsp;</span>
+                            <input class="form-control" aria-describedby="sizing-addon1"
+                                  style="width: 350px;" name="password" value="{{ user.password }}" >
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"
                                   id="sizing-addon1">&nbsp;&nbsp;邮&nbsp;&nbsp;箱&nbsp;&nbsp;</span>
                             <span class="form-control" aria-describedby="sizing-addon1"
                                   style="width: 350px;">{{ user.email }}</span>
@@ -94,8 +101,9 @@
                             <span type="text" class="form-control" aria-describedby="sizing-addon1"
                                   style="width: 350px;" value="">{{ user.v_start }}--{{ user.v_end }}</span>
                         </div>
-
                     </div>
+                    <br>
+                    <input type="submit" style="font-size: 20px;margin-left: 50px;width: 100px;height: 40px;border-radius: 5px" name="submit" value="保存">
                 {% else %}
                     <h1 class="pt-4 text-white h2">亲爱的用户：<span>{{ username }}</span>,<span>您好</span>
                         <br/>您的个人信息如下：</h1>
@@ -118,7 +126,8 @@
 {#                            <input type="text" class="form-control" aria-describedby="sizing-addon1"#}
 {#                                   style="width: 350px;" value="">#}
                         </div>
-
+                        <br>
+                        <input type="submit" style="font-size: 20px;margin-left: 50px;width: 100px;height: 40px;border-radius: 5px" name="submit" value="保存">
                     </div>
                     </center>
 {#                    <p class="mt-4 lead text-white"><br>#}
@@ -128,6 +137,7 @@
 {#                                      href="{% url 'vip' %}">VIP</a></span>特权#}
 {#                    </p>#}
                 {% endifequal %}
+            </form>
             <!--<div class="pt-3">
                 <a href="#" class="btn btn-white-alt text-blue btn-lg">
                     Hire me!
