@@ -248,8 +248,8 @@ def login(request):
         request.session['username'] = u.username
         response.set_cookie('usernameKey', 'username')
         if u.v_end < datetime.date.today():
-            u.update(is_vip=0)
-
+            # u.update(is_vip=0)
+            u.is_vip=0
         return response
 
 
