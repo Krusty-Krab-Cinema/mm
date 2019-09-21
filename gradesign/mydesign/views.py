@@ -1,8 +1,10 @@
 import datetime
 import json
 import time
+from random import Random
 
 from dateutil.relativedelta import relativedelta
+from django.core.mail import send_mail
 
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
@@ -21,6 +23,7 @@ def index(request):
     # return render(request, 'base.html')
     key = request.COOKIES.get('usernameKey')
     username = request.session.get(key, 0)
+    print(username)
     if username != 0:
         user=User.objects.get(username=username)
         print(type(user.is_vip))
@@ -475,3 +478,44 @@ def payit(request):
 
     # logout(request)
     return redirect(net)
+
+
+def getpass(request):
+    def random_str(numlength):
+        str = ''
+        chars = 'abcdefghijklmnopqrstuvwsyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+        length = len(chars) - 1
+        random = Random()
+        for i in range(numlength):
+            str += chars[random.randint(0, length)]
+        return str
+
+    if request.method == "POST":
+        username = request.POST.get('username')
+        email = request.POST.get('email')
+        print(email)
+        try:
+            a = User.objects.get(username=username)
+            print(a.email, type(a.email))
+            if a:
+                if a.email == email:
+                    print('a')
+                    num = a.id
+                    email_title = "找回密码"
+                    # 随机生成新密码
+                    number = random_str(8)
+
+                    email_body = "您的新密码为：{}，请用此密码登录，登录后不要忘记修改密码。".format(number)
+                    send_status = send_mail(email_title, email_body, "dyvandong@163.com", [request.POST.get('email'), ])
+                    print('aa')
+                    # 修改为默认密码
+                    a.password = number
+                    a.save()
+                    print('aaa')
+                    return render(request,'turn.html',{'getpass':1})
+                else:
+                    error_msg = '邮箱错误'
+        except:
+            error_msg = '用户不存在'
+            return render(request, 'getpass.html', locals())
+    return render(request, 'getpass.html', locals())

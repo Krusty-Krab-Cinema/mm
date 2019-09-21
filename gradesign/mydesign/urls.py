@@ -18,5 +18,6 @@ urlpatterns = [
     url(r'^play/(\d+)/',views.play,name='play'),
     url(r'^vip/',views.vip,name='vip'),
     url(r'^jump/',views.jump,name='jump'),
-    url(r'^payit/',views.payit,name='payit')
+    url(r'^payit/',views.payit,name='payit'),
+    url(r'^getpass/$', views.getpass, name='getpass'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

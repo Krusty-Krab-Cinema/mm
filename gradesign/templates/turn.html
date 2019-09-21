@@ -26,10 +26,17 @@
 		<center>
 			<div id="main">
 				<img style="height: 85px;width: 85px;" src="/static/images/xlb.jpg" alt="" />
-				<div id="box">
+				{% ifequal getpass 1 %}
+                <div id="box" ><input type="hidden" id="xx" value="1">
+					邮箱发送成功，请查看邮箱
+                    还有<span id="sp">3</span>秒跳转到登录中心...
+				</div>
+                {% else %}
+                <div id="box"><input type="hidden" id="xx" value="2">
 					vip影片仅会员可观看
                     还有<span id="sp">3</span>秒跳转到充值中心...
 				</div>
+                {% endifequal %}
 			</div>
 
             <script>
@@ -37,12 +44,17 @@
                     setInterval(go,1000)
                 };
                 var x=2;
+                var y=document.getElementById('xx').value
                 function go() {
 
                     if (x>=0){
                         document.getElementById("sp").innerText=x;
                     }else {
-                        location="{% url 'vip' %}";
+                        if(document.getElementById('xx').value == 2){
+                            location="{% url 'vip' %}";
+                        }else{
+                            location="/login/";
+                        }
                     }
                     x--;
                 }

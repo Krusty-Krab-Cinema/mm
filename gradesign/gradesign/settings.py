@@ -138,3 +138,10 @@ APP_PRIVATE_KEY  = open(os.path.join(BASE_DIR,'alipay/app_private_key.txt')).rea
 ALIPAY_PUBLIC_KEY = open(os.path.join(BASE_DIR,'alipay/alipay_public.txt')).read()
 # 沙箱APPID
 ALI_APP_ID = '2016101400683992'
+
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'dyvandong@163.com' # 帐号
+EMAIL_HOST_PASSWORD = 'dyvan1013' # 密码
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
