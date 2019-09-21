@@ -22,10 +22,11 @@
 			<div class="banner">
 
 				<!-- banner 表格 显示 -->
+                <br><br><br>
 				<div class="banShow">
 					<table border="1" cellspacing="0" cellpadding="0" >
 {#                        style="background: url(/static/img/fff.gif)"#}
-						<tr style="height: 60px;">
+						<tr height="40px">
 							<td width="66px" class="tdColor tdC">序号</td>
 							<td width="315px" class="tdColor">名称</td>
 							<td width="308px" class="tdColor">导演</td>
@@ -35,8 +36,8 @@
 							<td width="180px" class="tdColor">假删除</td>
 							<td width="125px" class="tdColor">真删除</td>
 						</tr>
-                        {% for mv in mvs %}
-						<tr>
+                        {% for mv in pagination %}
+						<tr height="40px">
 							<td>{{ mv.id }}</td>
 							<td>{{ mv.name }}</td>
 							<td>{{ mv.director }}</td>
@@ -58,25 +59,29 @@
 						</tr>{% endfor %}
 
 					</table>
-{#					<div class="paging">此处是分页{% if pagination.has_previous() %}#}
-{#                        < a href=" 'app:c_list',args=(bid,1))}}">首页</ a>#}
-{#                            &nbsp;&nbsp;&nbsp;&nbsp;#}
-{#                        < a href="{{ url('app:c_list',args=(bid,pagination.previous_page_number())) }}" >上一页</ a>#}
-{#                        {% else %}#}
-{#                            <a>首页</ a>#}
-{#                            &nbsp;&nbsp;&nbsp;&nbsp;#}
-{#                            <a >上一页</ a>#}
-{#                        {% endif %}#}
-{#                        &nbsp;&nbsp;{{ pagination.number }}&nbsp;&nbsp;#}
-{#                        {% if pagination.has_next() %}#}
-{#                        < a href="{{ url('app:c_list',args=(bid,pagination.next_page_number())) }}" >下一页</ a>#}
-{#                            &nbsp;&nbsp;&nbsp;&nbsp;#}
-{#                        < a href="{{ url('app:c_list',args=(bid,paginator.num_pages)) }}">尾 页</ a>#}
-{#                        {% else %}#}
-{#                            <a >下一页</ a>#}
-{#                            &nbsp;&nbsp;&nbsp;&nbsp;#}
-{#                            <a>尾页</ a>#}
-{#                        {% endif %}</div>#}
+                    <br><br>
+					<div class="paging">
+                        {% if pagination.has_previous %}
+                        <a href=" {% url 'banner' 1 %}">首页</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="{% url 'banner' pagination.previous_page_number %}" >上一页</a>
+                        {% else %}
+                            <a>首页</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a >上一页</a>
+                        {% endif %}
+                        &nbsp;&nbsp;{{ pagination.number }}&nbsp;&nbsp;
+                        {% if pagination.has_next %}
+                        <a href="{% url 'banner' pagination.next_page_number %}" >下一页</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="{% url 'banner' paginator.num_pages %}">尾 页</a>
+                        {% else %}
+                            <a >下一页</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a>尾页</a>
+                        {% endif %}
+                        <a>共{{ paginator.num_pages }}页</a>
+                    </div>
 				</div>
 				<!-- banner 表格 显示 end-->
 			</div>

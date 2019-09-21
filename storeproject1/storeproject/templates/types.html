@@ -30,12 +30,14 @@
 
         </div>
         <div>
+            <br><br><br>
+{#        <span><h1>今日开通会员个数</h1></span>#}
             <table border="1" cellspacing="0" cellpadding="0">
                 <tr>
-                    <td width="66px" class="tdColor tdC">序号</td>
+                    <td width="66px" class="tdColor tdC" height="80px">序号</td>
                     {% for ct in cts %}
                         <td width="100px" class="tdColor tdC">{{ ct.id }}
-                            <a href="{% url 'delct' ct.id %}"><img class="operation" src="/static/img/delete.png"></a>
+                            <a href="{% url 'deltype' ct.id %}"><img class="operation" src="/static/img/delete.png"></a>
                         </td>
                     {% endfor %}
                 </tr>
