@@ -27,15 +27,19 @@ def index(request):
     # 导航显示的视频封面图片
     carousel_list = Movie.objects.filter(is_carousel=True)
     for i in carousel_list:
-        i.new_link = 'https://img3.doubanio.com/view/photo/l/public/' + str(i.cover_link).split('_')[0] + '.webp'
-        if i.new_link.count('.webp') > 1:
+        # i.new_link = 'https://img3.doubanio.com/view/photo/l/public/' + str(i.cover_link).split('_')[0] + '.webp'
+        # if i.new_link.count('.webp') > 1:
+        i.new_link = '/static/pics/'+str(i.cover_link).split('_')[0]+'.jpg'
+        if i.new_link.count('.jpg') > 1:
             i.new_link = i.new_link[ : len(i.new_link) - 5]
 
     # 推荐页面显示的视频小图（8个）
     recommend_list = Movie.objects.order_by('-mark')[:8]
     for r in recommend_list:
-        r.pic_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(r.cover_link).split('_')[0] + '.webp'
-        if r.pic_link.count('.webp') > 1:
+        # r.pic_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(r.cover_link).split('_')[0] + '.webp'
+        # if r.pic_link.count('.webp') > 1:
+        r.pic_link = '/static/pics/' + str(r.cover_link).split('_')[0]+'.jpg'
+        if r.pic_link.count('.jpg') > 1:
             r.pic_link = r.pic_link[ : len(r.pic_link) - 5]
         r.like_count = len(r.like.all())  # 视频被收藏的总数
     return render(request, 'index.html', locals())
@@ -233,6 +237,8 @@ def login(request):
 
         request.session['username'] = u.username
         response.set_cookie('usernameKey', 'username')
+        if u.v_end < datetime.date.today():
+            u.update(is_vip=0)
 
         return response
 
