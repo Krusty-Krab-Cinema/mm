@@ -88,7 +88,7 @@
                             <span class="input-group-addon"
                                   id="sizing-addon1">&nbsp;&nbsp;密&nbsp;&nbsp;码&nbsp;&nbsp;</span>
                             <input class="form-control" aria-describedby="sizing-addon1"
-                                  style="width: 350px;" name="password" value="{{ user.password }}" >
+                                  style="width: 350px;" type="password" name="password" value="{{ user.password }}" >
                         </div>
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon"
@@ -109,21 +109,27 @@
                         <br/>您的个人信息如下：</h1>
                     <div style="margin-left: 300px">
                         <div class="input-group input-group-lg">
-                            <span class="input-group-addon" id="sizing-addon1">&nbsp;用户名&nbsp;</span>
-                            <input type="text" class="form-control" aria-describedby="sizing-addon1"
-                                   style="width: 350px;" value="{{ username }}">
+                            <span class="input-group-addon" id="sizing-addon1">&nbsp;&nbsp;用户名&nbsp;</span>
+                            <span type="text" class="form-control" aria-describedby="sizing-addon1"
+                                  style="width: 350px;" value="">{{ username }}</span>
                         </div>
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon"
-                                  id="sizing-addon1">&nbsp;&nbsp;密&nbsp;&nbsp;码&nbsp;&nbsp;</span>
+                                  id="sizing-addon1">&nbsp;&nbsp;密&nbsp;&nbsp;&nbsp;码&nbsp;&nbsp;</span>
                             <input class="form-control" aria-describedby="sizing-addon1"
-                                  style="width: 350px;" name="password" value="{{ user.password }}" >
+                                  style="width: 350px;" type="password" name="password" value="{{ user.password }}" >
                         </div>
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon"
-                                  id="sizing-addon1">&nbsp;&nbsp;邮&nbsp;&nbsp;箱&nbsp;&nbsp;</span>
-                            <input type="text" class="form-control" aria-describedby="sizing-addon1"
-                                   style="width: 350px;" value="{{ user.email }}">
+                                  id="sizing-addon1">重复密码</span>
+                            <input class="form-control" aria-describedby="sizing-addon1"
+                                  style="width: 350px;" type="password" name="repassword" value="{{ user.password }}" >
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"
+                                  id="sizing-addon1">&nbsp;&nbsp;邮&nbsp;&nbsp;&nbsp;箱&nbsp;&nbsp;</span>
+                            <span class="form-control" aria-describedby="sizing-addon1"
+                                  style="width: 350px;">{{ user.email }}</span>
                         </div>
                         <div class="input-group input-group-lg">
 {#                            <span class="input-group-addon" id="sizing-addon1">VIP时间</span>#}
@@ -134,7 +140,7 @@
                         </div>
                         <br>
                     </div>
-                    <input type="submit" style="font-size: 20px;margin-left: 50px;width: 100px;height: 40px;border-radius: 5px" name="submit" value="保存">
+                    <input type="submit" style="font-size: 20px;margin-left: 50px;width: 100px;height: 40px;border-radius: 5px" name="submit" value="修改密码">
                     </center>
 {#                    <p class="mt-4 lead text-white"><br>#}
 {#                        用户名： <span>{{ username }}</span> <br>#}

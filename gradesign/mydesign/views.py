@@ -385,7 +385,7 @@ def person(request):
 def user(request):
     key = request.COOKIES.get('usernameKey')
     usernameKey = request.session.get(key, 0)
-    key = request.COOKIES.get('usernameKey')
+    # key = request.COOKIES.get('usernameKey')
     username = request.session.get(key, 0)
     if username != 0:
         user=User.objects.get(username=username)
@@ -401,8 +401,12 @@ def user(request):
         # print(2222222)
         pwd = request.POST.get('password')
         # print(pwd)
-        user.password = pwd
-        user.save()
+        if user.password == pwd:
+            repwd = request.POST.get('repassword')
+            user.password = repwd
+            user.save()
+        else:
+            print('密码输入错误')
         return redirect('/user/')
     return render(request,'userinfo.html',{
         'username':usernameKey,
