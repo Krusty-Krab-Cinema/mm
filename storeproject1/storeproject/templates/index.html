@@ -22,7 +22,7 @@
 		</div>
 		<div class="headR">
 			<p class="p1">
-				欢迎管理员：{{ u.username }}
+				欢迎管理员
 				<!--?php echo cookie('name')?-->
 			</p>
 			<p class="p2">
@@ -132,7 +132,7 @@
 {#					<img class="coin11" src="/static/img/coin111.png"><img class="coin22" src="/static/img/coin222.png"><a href="/static/changepwd.html" target="main" class="cks">修改密码</a><img class="icon5" src="/static/img/coin21.png">#}
 				</dd>
 				<dd>
-					<img class="coin11" src="/static/img/coin111.png"><img class="coin22" src="/static/img/coin222.png"><a href="/static/log.html" target="_parent" class="cks">退出</a><img class="icon5" src="/static/img/coin21.png">
+					<img class="coin11" src="/static/img/coin111.png"><img class="coin22" src="/static/img/coin222.png"><a href="{% url 'login' %}" target="_parent" class="cks">退出</a><img class="icon5" src="/static/img/coin21.png">
 				</dd>
 			</dl>
 

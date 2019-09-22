@@ -19,8 +19,8 @@ from django.contrib import admin
 from store import views
 
 urlpatterns = [
-    url(r'^$', views.login,name='login'),
-    url(r'^login/$', views.login,name='login'),
+    url(r'^$', views.userlogin,name='login'),
+    url(r'^login/$', views.userlogin,name='login'),
     url(r'^/', views.index,name='index'),
     # url(r'^pinpai/', views.pinpai, name='pinpai'),
     # url(r'^newsType/', views.newsType, name='newsType'),

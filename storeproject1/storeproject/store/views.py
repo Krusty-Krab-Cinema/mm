@@ -37,9 +37,9 @@ def index(request):
 #         return HttpResponse('<script>alert("账号或者密码错误");history.back()</script>')
 #     return render(request, 'log.html', locals())
 # 登陆页
-def login(request):
+def userlogin(request):
     # 将上一个页面的地址记录
-    url = request.META.get('HTTP_REFERER', '/   ')
+    url = request.META.get('HTTP_REFERER', '/')
     print(url)
     request.session['preUrl'] = url
     if request.method == 'GET':
@@ -50,6 +50,8 @@ def login(request):
         # 查询用户是否存在
         try:
             u = User.objects.get(username=nickname)
+            # if u:
+            #     login(request,u)
         except User.DoesNotExist as e:
             return redirect('/login/')
         # 如果存在,验证密码是否正确
@@ -63,12 +65,13 @@ def login(request):
         response.set_cookie('userToken', token)
         request.session['username'] = u.username
         response.set_cookie('usernameKey', 'username')
-        # return render(request, 'main.html',locals())
+        print(nickname)
+        return render(request, 'main.html',locals())
         # if u.v_end < datetime.date.today():
         #     # u.update(is_vip=0)
         #     u.is_vip=0
         return response
-    return render(request,'log.html')
+    # return render(request,'log.html')
 # @login_required(login_url='/login')
 # def pinpai(request):
 #
@@ -91,7 +94,7 @@ def users(request):
 #     return render(request,'link.html',locals())
 
 #影片管理
-@login_required(login_url='/login')
+
 def user(request,page=1):
     key = request.COOKIES.get('usernameKey')
     usernameKey = request.session.get(key, 0)
@@ -104,7 +107,7 @@ def user(request,page=1):
     return render(request, 'user.html', locals())
 
 #各种操作管理
-@login_required(login_url='/login')
+
 def banner(request,page=1):
     key = request.COOKIES.get('usernameKey')
     usernameKey = request.session.get(key, 0)
@@ -116,7 +119,7 @@ def banner(request,page=1):
     return render(request, 'banner.html', locals())
 
 #评论管理
-@login_required(login_url='/login')
+
 def opinion(request,page=1):
     u = request.user
     comments = Comment.objects.filter()
@@ -127,7 +130,7 @@ def opinion(request,page=1):
     return render(request, 'opinion.html', locals())
 
 #会员管理
-@login_required(login_url='/login')
+
 def vip(request,page=1):
     u = request.user
     users = User.objects.filter()
@@ -152,7 +155,7 @@ def vip(request,page=1):
 #     return render(request, 'index.html', locals())
 
 #管理员
-@login_required(login_url='/login')
+
 def manager(request,page=1):
     key = request.COOKIES.get('usernameKey')
     usernameKey = request.session.get(key, 0)
@@ -239,7 +242,7 @@ def realdel(request,id=1):
     return redirect(reverse('banner',args=(1,)))
 
 #类别管理
-@login_required(login_url='/login')
+# @login_required(login_url='/login')
 def types(request):
 
     u = request.user
@@ -275,7 +278,6 @@ def types(request):
 #     return render(request, 'flink.html', locals())
 
 #用户充钱管理
-@login_required(login_url='/login')
 def domoney(request):
     u = request.user
     nowday= time.strftime('%Y-%m-%d',time.localtime())
@@ -298,7 +300,6 @@ def domoney(request):
 #     return render(request, 'addmv.html', locals())
 
 #首页
-@login_required(login_url='/login')
 def main(request):
 
     u = request.user
