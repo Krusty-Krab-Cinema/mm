@@ -93,8 +93,7 @@ def single(request, mid):
 
     # single_movie.single_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + \
     #                            str(single_movie.cover_link).split('_')[0] + '.webp'
-    single_movie.single_link = '/static/pics/' + \
-                               str(single_movie.cover_link).split('_')[0] + '.jpg'
+    single_movie.single_link = '/static/pics/' +str(single_movie.cover_link).split('_')[0] + '.jpg'
     if single_movie.single_link.count('.jpg') > 1:
         single_movie.single_link = single_movie.single_link[: len(single_movie.single_link) - 5]
 
@@ -203,8 +202,7 @@ def movie(request, tid):
         # s.new_link = 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/' + str(s.cover_link).split('_')[
         #     0] + '.webp'
         # if s.new_link.count('.webp') > 1:
-        s.new_link = '/statics/pics/' + str(s.cover_link).split('_')[
-            0] + '.jpg'
+        s.new_link = '/static/pics/' + str(s.cover_link).split('_')[0] + '.jpg'
         if s.new_link.count('.jpg') > 1:
             s.new_link = s.new_link[: len(s.new_link) - 5]
 
