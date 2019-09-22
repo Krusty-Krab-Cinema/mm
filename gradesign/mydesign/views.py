@@ -396,22 +396,22 @@ def user(request):
     except:
         token = request.COOKIES.get('userToken')
         currentuser = User.objects.get(token=token).id
-        # print(111111)
+        print(currentuser)
     if request.method =='POST':
-        # print(2222222)
-        pwd = request.POST.get('password')
-        # print(pwd)
-        if user.password == pwd:
+        user = User.objects.get(id=currentuser)
+        pwd1= request.POST.get('password')
+        print(pwd1)
+        if user.password == pwd1:
             repwd = request.POST.get('repassword')
             user.password = repwd
             user.save()
         else:
-            print('密码输入错误')
+            error_msg='旧密码输入错误'
+            if error_msg :
+                print('1')
+            return render(request,'userinfo.html',locals())
         return redirect('/user/')
-    return render(request,'userinfo.html',{
-        'username':usernameKey,
-        'user':user
-    })
+    return render(request,'userinfo.html',locals())
 
 def play(request,mid):
     userkey=request.GET.get('user')
